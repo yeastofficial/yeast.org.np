@@ -122,25 +122,46 @@ header .nav li a:hover {
 .team h2 {
     text-align: center;
     margin-bottom: 40px;
+    color: #2e3a8c; /* A deep color for headings */
 }
 
 .team .member {
     display: inline-block;
-    width: 200px;
+    width: auto;
     margin: 20px;
     text-align: center;
 }
 
 .team .member img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+    width: 120px; /* Adjust image size */
+    height: 120px; /* Make them square */
+    border-radius: 50%; /* Circular images */
+    margin-bottom: 10px; /* Space between image and name */
 }
 
 .team .member h3 {
     font-size: 18px;
-    margin-top: 10px;
+    font-weight: bold;
 }
+
+.team .member p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Optional: If you want to add some spacing and make it responsive */
+@media (max-width: 768px) {
+    .team .member {
+        width: 45%; /* Two members per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .team .member {
+        width: 90%; /* One member per row on very small screens */
+    }
+}
+
 
 /* Contact Section */
 .contact {
