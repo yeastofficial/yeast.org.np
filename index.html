@@ -1,55 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YEAST | Home</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>YEAST - Youth for Environment And Social Transformation</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1, h2, h3, h4 {
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #00FFFF;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            float: left;
+            margin-left: 20px;
+        }
+
+        header .nav {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        header .nav li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        header .nav li a {
+            font-weight: bold;
+            color: white;
+        }
+
+        header .nav li a:hover {
+            color: #000;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('Background.jpg');
+            background-size: cover;
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        /* About Us Section */
+        .about {
+            background-color: #f4f4f4;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Programs Section */
+        .programs {
+            background-color: #e2e2e2;
+            padding: 60px 20px;
+        }
+
+        .programs h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .programs .program-card {
+            display: inline-block;
+            background-color: #fff;
+            padding: 20px;
+            width: 30%;
+            margin: 10px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .programs .program-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Team Section */
+        .team {
+            background-color: #fff;
+            padding: 60px 20px;
+        }
+
+        .team h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .team .member {
+            display: inline-block;
+            width: 200px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .team .member img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        .team .member h3 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: #00FFFF;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .contact form button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background-color: #000;
+        }
+
+        /* Footer Section */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #00FFFF;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Google Map */
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+
+    </style>
 </head>
+
 <body>
-    <!-- Top Section (Header) -->
-    <!-- Navigation Bar -->
-<header>
-    <div class="container">
+
+    <!-- Header Section -->
+    <header>
         <div class="logo">
-            <img src="path-to-your-logo/Untitled-2.png" alt="YEAST Logo">
+            <img src="Untitled-2.png" alt="YEAST Logo" height="50">
         </div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#program">Programme</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#gallery">Photo Gallery</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-
-        <!-- Hero Section -->
-        <div class="hero">
-            <h1>Welcome to YEAST</h1>
-            <!-- About Us Section -->
-<section id="about" class="about">
-    <div class="container">
-        <h2>About Us</h2>
-        <p>
-            Youth for Environment And Social Transformation (YEAST), a typical stage for every one of the imaginative personalities, was established as a non-profit, non-governmental organization. The organization was established on 17th April 2022 by the inception of dynamic understudies of different establishments connected with applied sciences alongside the guidance of senior educators as consultants. 
-        </p>
-        <p>
-            Essentially, the organization aims to enhance the development of character and leadership abilities in students by conducting various training, discussions, debate sessions, courses, and meetings. It also works to spread the knowledge and skills learned to local farmers. YEAST aims to bridge the gap between rural, environmental, and social education and local communities, helping them understand things more appropriately and practically at the ground level.
-        </p>
-        <p>
-            YEAST has been working in various fields, including the environment, social issues, education, veterinary, and agricultural sectors, since its foundation.
-        </p>
-    </div>
-</section>
-
-            <a href="#contact" class="cta-button">Get Involved</a>
-        </div>
+        <ul class="nav">
+            <li><a href="#home">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="Team.html">Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </header>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+        <h1>Welcome to YEAST</h1>
+        <p>Better Environment, Better Society</p>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="about" id="about">
+        <h2>About Us</h2>
+        <p>Youth for Environment And Social Transformation (YEAST), a typical stage for every one of the imaginative personalities, was established as a non-profit, non-governmental organization. The organization was established on 17th April 2022 by the inception of dynamic understudies of different establishments connected with applied sciences alongside the guidance of senior educators as consultants.
+
+Essentially, the organization aims to enhance the development of character and leadership abilities in students by conducting various training, discussions, debate sessions, courses, and meetings. It also works to spread the knowledge and skills learned to local farmers. YEAST aims to bridge the gap between rural, environmental, and social education and local communities, helping them understand things more appropriately and practically at the ground level.
+
+YEAST has been working in various fields, including the environment, social issues, education, veterinary, and agricultural sectors, since its foundation.</p>
+    </div>
+
+    <!-- Programs Section -->
+    <div class="programs" id="programs">
+        <h2>Our Programs</h2>
+        <div class="program-card">
+            <img src="program1.jpg" alt="Program 1">
+            <h3>Program 1</h3>
+            <p>Description of Program 1</p>
+        </div>
+        <div class="program-card">
+            <img src="program2.jpg" alt="Program 2">
+            <h3>Program 2</h3>
+            <p>Description of Program 2</p>
+        </div>
+        <div class="program-card">
+            <img src="program3.jpg" alt="Program 3">
+            <h3>Program 3</h3>
+            <p>Description of Program 3</p>
+        </div>
+    </div>
+
+    <!-- Team Section -->
+    <div class="team" id="team">
+        <h2>Our Team</h2>
+        <div class="member">
+            <img src="huma_neupane.jpg" alt="Huma Neupane">
+            <h3>Huma Neupane, PhD</h3>
+            <p>Director, DORP, IAAS, TU</p>
+        </div>
+        <div class="member">
+            <img src="kamal_regmi.jpg" alt="Kamal Regmi">
+            <h3>Asst. Prof. Kamal Regmi</h3>
+            <p>IAAS, TU</p>
+        </div>
+        <div class="member">
+            <img src="kamal_regmi.jpg" alt="Kamal Regmi">
+            <h3>Dr. Akrit Rijal -  Founder President</h3>
+            <p></p>
+       
+    </div>
+        </div>
+        <div class="member">
+            <img src="kamal_regmi.jpg" alt="Kamal Regmi">
+            <h3>Anish Gyawali -  Founder Secretary/ Former President</h3>
+            <p></p>
+       </div>
+        <div class="member">
+            <img src="kamal_regmi.jpg" alt="Kamal Regmi">
+            <h3>Utsab Sapkota -  Former President</h3>
+            <p></p>
+       
+    </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+
+        <!-- Google Map Embed -->
+        <div id="map"></div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 YEAST. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+    <script>
+        function initMap() {
+            var location = { lat: 27.5753, lng: 85.5348 }; // Coordinates for your location
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+            var marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+    </script>
+    <script src="https://maps.app.goo.gl/DMYKYskjnrVfKyYE7" async defer></script>
 </body>
+
 </html>
