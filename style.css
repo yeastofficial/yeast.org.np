@@ -1,0 +1,219 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #00FFFF; /* Brand Color */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    float: left;
+    margin-left: 20px;
+}
+
+header .nav {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+header .nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+header .nav li a {
+    font-weight: bold;
+    color: white;
+}
+
+header .nav li a:hover {
+    color: #000;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('Background.jpg');
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* About Us Section */
+.about {
+    background-color: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Programs Section */
+.programs {
+    background-color: #e2e2e2;
+    padding: 60px 20px;
+}
+
+.programs h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.programs .program-card {
+    display: inline-block;
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.programs .program-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Team Section */
+.team {
+    background-color: #fff;
+    padding: 60px 20px;
+}
+
+.team h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team .member {
+    display: inline-block;
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.team .member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.team .member h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #00FFFF; /* Brand Color */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contact form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background-color: #000;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #00FFFF; /* Brand Color */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Google Map */
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .nav li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .programs .program-card {
+        width: 100%;
+    }
+
+    .team .member {
+        width: 100%;
+    }
+}
