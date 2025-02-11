@@ -305,3 +305,72 @@ footer {
     line-height: 1.5;
 }
 
+.get-involved-section {
+    text-align: center;
+    padding: 50px;
+    background: #f9f9f9;
+}
+
+.involvement-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.option {
+    width: 30%;
+    padding: 20px;
+    background: #00FFFF;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.option h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.option p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.involvement-form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.involvement-form input, .involvement-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.involvement-form button {
+    width: 100%;
+    padding: 10px;
+    background: #00FFFF;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
