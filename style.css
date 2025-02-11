@@ -73,7 +73,7 @@ header .nav li a:hover {
 .about {
     background-color: #f4f4f4;
     padding: 60px 20px;
-    text-align: center;
+    text-align: justify;
 }
 
 .about h2 {
