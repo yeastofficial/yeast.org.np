@@ -12,36 +12,46 @@
             padding: 0;
             background-color: #121212;
             color: white;
-            overflow-x: hidden;
         }
         header {
             display: flex;
             align-items: center;
+            justify-content: space-between;
             background-color: #00FFFF;
             padding: 15px;
-            text-align: left;
         }
         header img {
             height: 50px;
-            margin-right: 15px;
+        }
+        header h1 {
+            font-size: 1.8em;
+            color: black;
+        }
+        nav {
+            background-color: #00FFFF;
         }
         nav ul {
             list-style-type: none;
             padding: 0;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin: 0;
         }
         nav ul li {
-            display: inline;
-            margin: 0 20px;
+            margin: 0 15px;
         }
         nav ul li a {
-            color: white;
             text-decoration: none;
+            color: black;
             font-weight: bold;
+            font-size: 1.2em;
+        }
+        nav ul li a:hover {
+            color: #121212;
         }
         .parallax {
             background-image: url('Background.jpg');
-            height: 500px;
+            height: 400px;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -51,47 +61,26 @@
             color: #00FFFF;
             font-size: 2em;
             text-align: center;
-            padding-top: 200px;
+            padding-top: 150px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
         }
         .content {
             padding: 50px;
             text-align: center;
         }
-        .contact-section {
-            background-color: #1a1a1a;
-            padding: 30px;
+        .projects, .team, .contact {
+            padding: 50px 0;
             text-align: center;
-        }
-        .contact-section h2 {
-            color: #00FFFF;
-        }
-        .contact-table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-        }
-        .contact-table th, .contact-table td {
-            border: 1px solid #00FFFF;
-            padding: 10px;
-            text-align: left;
-        }
-        .contact-table th {
-            background-color: #00FFFF;
-            color: black;
-        }
-        .profile-photo {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border: 3px solid #00FFFF;
         }
         footer {
             background-color: #00FFFF;
-            padding: 10px;
+            color: black;
             text-align: center;
+            padding: 15px;
             font-weight: bold;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
@@ -106,13 +95,13 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="team.html">Team</a></li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="Team.html">Team</a></li>
             <li><a href="get_involved.html">Get Involved</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-<img src="Background.jpg" alt="Project Title">
+
     <div class="parallax">
         <div class="parallax-text">
             <p>Empowering Youth for a Sustainable Future</p>
@@ -121,232 +110,35 @@
 
     <div class="content">
         <h2>Welcome to YEAST!</h2>
-        <p>Youth for Environment And Social Transformation (YEAST), a typical stage for every one of the imaginative personalities was established as a non-profit, non- governmental organization, 'The organization was established on 17th April 2022 by the nception of dynamic understudies of different establishments connected with applied sciences alongside the rules of senior educators as consultants. 
-Basically, the organization had gone for the gold improvement of character and administration ability in-the understudies by directing different preparation, conversation, banter meetings, courses, and gatherings, and furthermore to spread the information and abilities-figured out how to the nearby ranchers. Exactly, it is intended to conneet_the-hole between rural, climate, and social school and nearby Individuals around the Country which will assist with understanding things all the more suitably and fors all intents and purposes at ahe ground level. 
-YEAST has been working in the different areas of climate, Social, Education, Veterinary, and Agricultural sectors, since its date of foundation. </p>
-    </div>
-    </div>
-    <section class="team-section">
-    <h2>Our Team</h2>
-
-    <!-- Advisors Section -->
-    <h3>Advisors</h3>
-    <div class="team-container">
-        <div class="team-member">
-            <h4>Huma Neupane, PhD</h4>
-            <p>Director, DORP, IAAS, TU</p>
-        </div>
-        <div class="team-member">
-            <h4>Asst. Prof. Kamal Regmi</h4>
-            <p>IAAS, TU</p>
-        </div>
-        <div class="team-member">
-            <h4>Dr. Akrit Rijal</h4>
-        </div>
-        <div class="team-member">
-            <h4>Anish Gyawali</h4>
-        </div>
-        <div class="team-member">
-            <h4>Utsab Sapkota</h4>
-        </div>
+        <p>We are a non-profit organization focused on environmental conservation, social transformation, education, and sustainable development. Our aim is to empower youth, engage communities, and bridge the gap between rural education and practical solutions.</p>
     </div>
 
-    <!-- Founding Team Section -->
-    <h3>Founding Team</h3>
-    <div class="team-container">
-        <div class="team-member">
-            <h4>Dr. Akrit Rijal - President</h4>
-        </div>
-        <div class="team-member">
-            <h4>Sirjana Bashyal - Vice President</h4>
-        </div>
-        <div class="team-member">
-            <h4>Anish Gyawali - Secretary</h4>
-        </div>
-        <div class="team-member">
-            <h4>Manish Dahal - Vice Secretary</h4>
-        </div>
-        <div class="team-member">
-            <h4>Bipin Bhandari - Treasurer</h4>
-        </div>
-        <div class="team-member">
-            <h4>Utsab Sapkota - Member</h4>
-        </div>
-        <div class="team-member">
-            <h4>Samikshya Rayamajhi - Member</h4>
-        </div>
-        <div class="team-member">
-            <h4>Indu Gyawali - Member</h4>
-        </div>
-        <div class="team-member">
-            <h4>Indu Panthi - Member</h4>
-        </div>
-        <div class="team-member">
-            <h4>Bishal Dhungana - Member</h4>
-        </div>
-        <div class="team-member">
-            <h4>Arbin Dawadi - Member</h4>
-        </div>
-        <div class="team-member">
-            <h4>Prakriti Bhusal - Member</h4>
-        </div>
-        <div class="team-member">
-            <h4>Kamal Acharya - Member</h4>
-        </div>
-    </div>
+    <section class="projects">
+        <h2>Our Projects</h2>
+        <p>Explore the impactful work we are doing to promote sustainable development in communities across Nepal.</p>
+        <a href="projects.html">Learn More</a>
+    </section>
 
-    <!-- Current Leadership Section -->
-    <h3>Current Leadership</h3>
-    <div class="team-container">
-        <div class="team-member"><h4>President - Pradip Bhusal</p></div>
-        <div class="team-member"><h4>Vice President - Reshma KC</p></div>
-        <div class="team-member"><h4>Secretary - Arbin Dawadi</p></div>
-        <div class="team-member"><h4>Vice Secretary - Sadikshya Bhattarai</p></div>
-        <div class="team-member"><h4>Treasurer - Indu Panthi</p></div>
-        <div class="team-member"><h4>Applied Coordinator - Saraswoti Gautam</p></div>
-        <div class="team-member"><h4>Social Media Coordinator- Ritu Bhattarai</p></div>
-        <div class="team-member"><h4>Social Coordinator - Manisha Dhakal</p></div>
-    </div>
+    <section class="team">
+        <h2>Our Team</h2>
+        <p>Meet the passionate individuals driving change at YEAST.</p>
+        <a href="team.html">Meet Our Team</a>
+    </section>
 
-    <!-- Members Section -->
-    <h3>Members</h3>
-    <p class="team-members">Kritima Sapkota, Samikshya Khanal, Amrit Bhusal, Prabin Thapa, Bishal Kunwar, Kalyan Aryan, Sanjay Yadav, Sandeep Mourya</p>
-</section>
-    <section class="projects-section">
-    <h2>Our Projects</h2>
-    <div class="projects-container">
-        <div class="project-card">
-            <img src="Untitled-2.jpg" alt="Project Title">
-            <h3>Our Successfully completed Projects from the date of Established.</h3>
-            <p> </p>
-            <a href="https://www.facebook.com/yeast2022" target="_blank">Our Successfully completed Projects</a>
-        </div>
-        <!-- Repeat the above block for each project -->
-    </div>
-</section>
-
-<section class="team-section">
-    <h2>Our Team</h2>
-
-    <!-- Advisors Section -->
-    <h3>Advisors</h3>
-    <div class="team-container">
-        <div class="team-member">
-            <h4>Huma Neupane, PhD</h4>
-            <p>Director, DORP, IAAS, TU</p>
-        </div>
-        <div class="team-member">
-            <h4>Asst. Prof. Kamal Regmi</h4>
-            <p>IAAS, TU</p>
-        </div>
-        <div class="team-member">
-            <h4>Dr. Akrit Rijal</h4>
-        </div>
-        <div class="team-member">
-            <h4>Anish Gyawali</h4>
-        </div>
-        <div class="team-member">
-            <h4>Utsab Sapkota</h4>
-        </div>
-    </div>
-
-    <!-- Current Leadership Section -->
-    <h3>Current Leadership</h3>
-    <div class="team-container">
-        <div class="team-member"><h4>President - Pradip Bhusal</p></div>
-        <div class="team-member"><h4>Vice President - Reshma KC</p></div>
-        <div class="team-member"><h4>Secretary - Arbin Dawadi</p></div>
-        <div class="team-member"><h4>Vice Secretary - Sadikshya Bhattarai</p></div>
-        <div class="team-member"><h4>Treasurer - Indu Panthi</p></div>
-        <div class="team-member"><h4>Applied Coordinator - Saraswoti Gautam</p></div>
-        <div class="team-member"><h4>Social Media Coordinator- Ritu Bhattarai</p></div>
-        <div class="team-member"><h4>Social Coordinator - Manisha Dhakal</p></div>
-    </div>
-
-    <!-- Members Section -->
-    <h3>Members</h3>
-    <p class="team-members">Kritima Sapkota, Samikshya Khanal, Amrit Bhusal, Prabin Thapa, Bishal Kunwar, Kalyan Aryan, Sanjay Yadav, Sandeep Mourya</p>
-</section>
-<section class="get-involved-section">
-    <h2>Get Involved</h2>
-    <p>Join us in making a difference! Whether you want to volunteer, donate, or collaborate, there’s a place for you at YEAST.</p>
-
-    <div class="involvement-options">
-        <div class="option">
-            <h3>Volunteer</h3>
-            <p>Be a part of our environmental and social initiatives.</p>
-            <a href="#volunteer-form" class="btn">Sign Up</a>
-        </div>
-
-        <div class="option">
-            <h3>Donate</h3>
-            <p>Support our projects and help us create sustainable change.</p>
-            <a href="donate.html" class="btn">Donate Now</a>
-        </div>
-
-        <div class="option">
-            <h3>Membership</h3>
-            <p>Become a YEAST member and contribute to meaningful projects.</p>
-            <a href="#signup-form" class="btn">Join Us</a>
-        </div>
-    </div>
-
-    <!-- Volunteer Form -->
-    <form id="volunteer-form" class="involvement-form">
-        <h3>Volunteer Sign-Up</h3>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="text" name="phone" placeholder="Your Phone Number" required>
-        <textarea name="message" placeholder="Tell us how you'd like to help"></textarea>
-        <button type="submit" class="btn">Submit</button>
-    </form>
-
-    <!-- Signup Form -->
-    <form id="signup-form" class="involvement-form">
-        <h3>Membership Sign-Up</h3>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="text" name="phone" placeholder="Your Phone Number" required>
-        <button type="submit" class="btn">Join Now</button>
-    </form>
-</section>
-<section class="contact-section">
+    <section class="contact">
     <h2>Contact Us</h2>
-    <p>We’d love to hear from you! Reach out to us through the following details.</p>
-
-    <div class="contact-info">
-        <div class="contact-item">
-            <strong>📞 Phone:</strong> <a href="tel:+9779867230656">+977-9867230656</a>
-        </div>
-        <div class="contact-item">
-            <strong>📍 Address:</strong> Siddharthanagar-2, Rupandehi
-        </div>
-        <div class="contact-item">
-            <strong>✉️ Email:</strong> <a href="mailto:yeast2018official@gmail.com">yeast2018official@gmail.com</a>
-        </div>
+    <p>We'd love to hear from you! Reach out to us through any of the following channels:</p>
+    <div>
+        <p><strong>📞 Phone:</strong> <a href="tel:+9779867230656">+977-9867230656</a></p>
+        <p><strong>📍 Address:</strong> Siddharthanagar-2, Rupandehi</p>
+        <p><strong>✉️ Email:</strong> <a href="mailto:yeast2018official@gmail.com">yeast2018official@gmail.com</a></p>
     </div>
 
-    <!-- Google Maps Embed -->
-    <div class="map-container">
-        <iframe 
-            src="https://maps.google.com/maps?q=Siddharthanagar-2,%20Rupandehi&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-            width="100%" 
-            height="300" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
-    </div>
-
-    <!-- Contact Form -->
-    <form class="contact-form">
-        <h3>Send Us a Message</h3>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="text" name="phone" placeholder="Your Phone Number" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-    </form>
+    <h3>Our Location</h3>
+    <!-- Embed Google Maps -->
+    <iframe src="https://maps.app.goo.gl/mhqoUFy9MSgFbcMS9" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <br>
+    <a href="contact.html">Get in Touch</a>
 </section>
 
 
