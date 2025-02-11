@@ -374,18 +374,45 @@ YEAST has been working in various fields, including the environment, social issu
     </div>
     </div>
 
-    <!-- Contact Section -->
-    <div class="contact" id="contact">
-        <h2>Contact Us</h2>
-        <form action="#">
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
+    <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p>We’d love to hear from you! Reach out to us through the following details.</p>
 
-        <!-- Google Map Embed -->
-        <div id="map"></div>
+    <div class="contact-info">
+        <div class="contact-item">
+            <strong>📞 Phone:</strong> <a href="tel:+9779867230656">+977-9867230656</a>
+        </div>
+        <div class="contact-item">
+            <strong>📍 Address:</strong> Siddharthanagar-2, Rupandehi
+        </div>
+        <div class="contact-item">
+            <strong>✉️ Email:</strong> <a href="mailto:yeast2018official@gmail.com">yeast2018official@gmail.com</a>
+        </div>
+    </div>
+
+    <!-- Google Maps Embed -->
+    <div class="map-container">
+        <iframe 
+            src="https://maps.google.com/maps?q=Siddharthanagar-2,%20Rupandehi&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+        </iframe>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="contact-form">
+        <h3>Send Us a Message</h3>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="phone" placeholder="Your Phone Number" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+    </form>
+</section>
+
 
     </div>
 
