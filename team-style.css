@@ -1,0 +1,45 @@
+/* General Styles for the Team Section */
+.team-section {
+    text-align: center;
+    margin: 20px;
+}
+
+h2, h3 {
+    font-family: 'Times New Roman', serif;
+    color: #00FFFF;
+}
+
+/* Style the team container */
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Style for each team member */
+.team-member {
+    width: 200px;
+    text-align: center;
+}
+
+/* Profile photo styling */
+.profile-photo {
+    width: 150px;  /* Make all photos same width */
+    height: 150px; /* Make all photos same height */
+    border-radius: 50%;
+    object-fit: cover;  /* Ensures images maintain aspect ratio and cover the area */
+    margin-bottom: 10px;
+}
+
+/* Team member name and description */
+.team-member h4 {
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    color: #333;
+}
+
+.team-member p {
+    font-family: 'Times New Roman', serif;
+    color: #666;
+}
