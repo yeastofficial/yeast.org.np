@@ -4,147 +4,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youth for Environment And Social Transformation (YEAST)</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', serif;
-            font-weight: bold;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: white;
-        }
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background-color: #00FFFF;
-            padding: 15px;
-        }
-        header img {
-            height: 50px;
-        }
-        header h1 {
-            font-size: 1.8em;
-            color: black;
-        }
-        nav {
-            background-color: #00FFFF;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            margin: 0;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: black;
-            font-weight: bold;
-            font-size: 1.2em;
-        }
-        nav ul li a:hover {
-            color: #121212;
-        }
-        .parallax {
-            background-image: url('Background.jpg');
-            height: 400px;
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .parallax-text {
-            color: #00FFFF;
-            font-size: 2em;
-            text-align: center;
-            padding-top: 150px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-        .content {
-            padding: 50px;
-            text-align: center;
-        }
-        .projects, .team, .contact {
-            padding: 50px 0;
-            text-align: center;
-        }
-        footer {
-            background-color: #00FFFF;
-            color: black;
-            text-align: center;
-            padding: 15px;
-            font-weight: bold;
-        }
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
+    <!-- Header Section -->
     <header>
-        <img src="Untitled-2.png" alt="YEAST Logo">
-        <h1>Youth for Environment And Social Transformation (YEAST)</h1>
+        <div class="logo">
+            <img src="logo.png" alt="YEAST Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#get-involved">Get Involved</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#location">Location</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="Projects.html">Projects</a></li>
-            <li><a href="Team.html">Team</a></li>
-            <li><a href="get_involved.html">Get Involved</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <h1>Welcome to YEAST</h1>
+        <p>Your partner in environmental and social transformation!</p>
+    </section>
 
-    <div class="parallax">
-        <div class="parallax-text">
-            <p>Empowering Youth for a Sustainable Future</p>
-        </div>
-    </div>
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <h2>About Us</h2>
+        <p>Youth for Environment And Social Transformation (YEAST), a typical stage for every one of the imaginative personalities was established as a non-profit, non-governmental organization. The organization was established on 17th April 2022 by the inception of dynamic understudies of different establishments connected with applied sciences alongside the rules of senior educators as consultants.
+Basically, the organization had gone for the gold improvement of character and administration ability in the understudies by directing different preparation, conversation, banter meetings, courses, and gatherings, and furthermore to spread the information and abilities-figured out how to the nearby ranchers. Exactly, it is intended to connect the hole between rural, climate, and social school and nearby Individuals around the Country which will assist with understanding things all the more suitably and for all intents and purposes at the ground level.
+YEAST has been working in the different areas of climate, Social, Education, Veterinary, and Agricultural sectors, since its date of foundation.</p>
+    </section>
 
-    <div class="content">
-        <h2>Welcome to YEAST!</h2>
-        <p>We are a non-profit organization focused on environmental conservation, social transformation, education, and sustainable development. Our aim is to empower youth, engage communities, and bridge the gap between rural education and practical solutions.</p>
-    </div>
-
-    <section class="projects">
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
         <h2>Our Projects</h2>
-        <p>Explore the impactful work we are doing to promote sustainable development in communities across Nepal.</p>
-        <a href="projects.html">Learn More</a>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Description of project 1.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Description of project 2.</p>
+        </div>
     </section>
 
-    <section class="team">
+    <!-- Team Section -->
+    <section id="team" class="team-section">
         <h2>Our Team</h2>
-        <p>Meet the passionate individuals driving change at YEAST.</p>
-        <a href="team.html">Meet Our Team</a>
+        <h3>Advisors</h3>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="huma_neupane.jpg" alt="Huma Neupane" class="profile-photo">
+                <h4>Huma Neupane, PhD. - Director, DORP, IAAS, TU</h4>
+                <p></p>
+            </div>
+            <div class="team-member">
+                <img src="kamal_regmi.jpg" alt="Asst. Prof. Kamal Regmi" class="profile-photo">
+                <h4>Asst. Prof. Kamal Regmi - IAAS, TU</h4>
+                <p></p>
+            </div>
+            <div class="team-member">
+                <img src="akrit_rijal.jpg" alt="Dr. Akrit Rijal" class="profile-photo">
+                <h4>Dr. Akrit Rijal -Founder President</h4>
+                <p></p>
+            </div>
+            <div class="team-member">
+                <img src="anish_gyawali.jpg" alt="Anish Gyawali" class="profile-photo">
+                <h4>Anish Gyawali - Founder Secretary/Former President</h4>
+                <p></p>
+            </div>
+            <div class="team-member">
+                <img src="utsab_sapkota.jpg" alt="Utsab Sapkota" class="profile-photo">
+                <h4>Utsab Sapkota - Former President</h4>
+                <p></p>
+            </div>
+
+        </div>
     </section>
 
-    <section class="contact">
-    <h2>Contact Us</h2>
-    <p>We'd love to hear from you! Reach out to us through any of the following channels:</p>
-    <div>
-        <p><strong>📞 Phone:</strong> <a href="tel:+9779867230656">+977-9867230656</a></p>
-        <p><strong>📍 Address:</strong> Siddharthanagar-2, Rupandehi</p>
-        <p><strong>✉️ Email:</strong> <a href="mailto:yeast2018official@gmail.com">yeast2018official@gmail.com</a></p>
-    </div>
+    <!-- Get Involved Section -->
+    <section id="get-involved" class="get-involved-section">
+        <h2>Get Involved</h2>
+        <p>Want to join our cause? Fill out the volunteer form below.</p>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Why do you want to get involved?" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
-    <h3>Our Location</h3>
-    <!-- Embed Google Maps -->
-    <iframe src="https://maps.app.goo.gl/mhqoUFy9MSgFbcMS9" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    <br>
-    <a href="contact.html">Get in Touch</a>
-</section>
+    <!-- Location Section (Google Map) -->
+    <section id="location" class="location-section">
+        <h2>Our Location</h2>
+        <iframe src="https://maps.app.goo.gl/mhqoUFy9MSgFbcMS9" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Email us at: <a href="mailto:yeast2018official@gmail.com">yeast2018official@gmail.com</a></p>
+        <p>Phone: +977-1234567890</p>
+    </section>
 
+    <!-- Footer Section -->
     <footer>
-        <p>&copy; 2025 YEAST | All Rights Reserved</p>
+        <p>&copy; 2025 Youth for Environment And Social Transformation (YEAST). All rights reserved.</p>
     </footer>
-
 </body>
 </html>
