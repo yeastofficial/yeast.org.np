@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: 'Times New Roman', serif;
+    font-family: 'Calibri', sans-serif;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -335,11 +335,11 @@ footer {
     header h1 {
         font-size: 18px;
     }
-    
+
     .parallax-text {
         font-size: 1.5em;
     }
-    
+
     .content {
         padding: 30px;
     }
@@ -349,6 +349,7 @@ footer {
         margin-bottom: 20px;
     }
 }
+
 /* Basic reset */
 * {
     margin: 0;
@@ -358,7 +359,7 @@ footer {
 
 /* Body and font settings */
 body {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Calibri', sans-serif;
     background-color: #f4f4f4;
     color: #333;
 }
