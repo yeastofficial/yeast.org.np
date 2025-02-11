@@ -1,100 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Youth for Environment And Social Transformation (YEAST)</title>
-  <style>
-    body {
-      font-family: 'Times New Roman', serif;
-      margin: 0;
-      padding: 0;
-      background-color: #121212;
-      color: white;
-      overflow-x: hidden;
-    }
-    header {
-      background-color: #00FFFF;
-      padding: 15px;
-      text-align: center;
-      font-weight: bold;
-    }
-    nav ul {
-      list-style-type: none;
-      padding: 0;
-    }
-    nav ul li {
-      display: inline;
-      margin: 0 20px;
-    }
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .main-content {
-      padding: 50px;
-      text-align: center;
-    }
-    .parallax {
-      background-image: url('Background.jpg'); /* Use the URL of your background image */
-      height: 500px;
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    .parallax-text {
-      color: #00FFFF;
-      font-size: 2em;
-      text-align: justify;
-      padding-top: 200px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-      font-weight: bold;
-    }
-    footer {
-      background-color: #00FFFF;
-      padding: 10px;
-      text-align: center;
-      position: fixed;
-      width: 100%;
-      bottom: 0;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youth for Environment And Social Transformation (YEAST)</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: white;
+            overflow-x: hidden;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #00FFFF;
+            padding: 15px;
+            text-align: left;
+        }
+        header img {
+            height: 50px;
+            margin-right: 15px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .parallax {
+            background-image: url('background.jpg');
+            height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .parallax-text {
+            color: #00FFFF;
+            font-size: 2em;
+            text-align: center;
+            padding-top: 200px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .content {
+            padding: 50px;
+            text-align: center;
+        }
+        .contact-section {
+            background-color: #1a1a1a;
+            padding: 30px;
+            text-align: center;
+        }
+        .contact-section h2 {
+            color: #00FFFF;
+        }
+        .contact-table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        .contact-table th, .contact-table td {
+            border: 1px solid #00FFFF;
+            padding: 10px;
+            text-align: left;
+        }
+        .contact-table th {
+            background-color: #00FFFF;
+            color: black;
+        }
+        .profile-photo {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #00FFFF;
+        }
+        footer {
+            background-color: #00FFFF;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Youth for Environment And Social Transformation (YEAST)</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a href="get_involved.html">Get Involved</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="parallax">
-    <div class="parallax-text">
-      <p>Empowering Youth for a Sustainable Future</p>
+
+    <header>
+        <img src="Untitled-2.png" alt="YEAST Logo">
+        <h1>Youth for Environment And Social Transformation (YEAST)</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="get_involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="parallax">
+        <div class="parallax-text">
+            <p>Empowering Youth for a Sustainable Future</p>
+        </div>
     </div>
-  <div class="main-content">
-    <h2>Welcome to YEAST!</h2>
-    <p>Youth for Environment And Social Transformation (YEAST), a typical stage for every one of the imaginative personalities was established as a non-profit, non- governmental organization, 'The organization was established on 17th April 2022 by the nception of dynamic understudies of different establishments connected with applied sciences alongside the rules of senior educators as consultants. 
+
+    <div class="content">
+        <h2>Welcome to YEAST!</h2>
+        <p>Youth for Environment And Social Transformation (YEAST), a typical stage for every one of the imaginative personalities was established as a non-profit, non- governmental organization, 'The organization was established on 17th April 2022 by the nception of dynamic understudies of different establishments connected with applied sciences alongside the rules of senior educators as consultants. 
 Basically, the organization had gone for the gold improvement of character and administration ability in-the understudies by directing different preparation, conversation, banter meetings, courses, and gatherings, and furthermore to spread the information and abilities-figured out how to the nearby ranchers. Exactly, it is intended to conneet_the-hole between rural, climate, and social school and nearby Individuals around the Country which will assist with understanding things all the more suitably and fors all intents and purposes at ahe ground level. 
-YEAST has been working in the different areas of climate, Social, Education, Veterinary, and Agricultural sectors, since its date of foundation</p>
-  </div>
+YEAST has been working in the different areas of climate, Social, Education, Veterinary, and Agricultural sectors, since its date of foundation. </p>
     </div>
-  }
-  }
-  }
-  </div>
-  </div>
-  <footer>
-    <p>&copy; 2025 YEAST | All Rights Reserved</p>
-  </footer>
+
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <table class="contact-table">
+            <tr>
+                <th>Name</th>
+                <th>Role</th>
+                <th>Contact Number</th>
+            </tr>
+            <tr>
+                <td>Huma Neupane, PhD</td>
+                <td>Advisor</td>
+                <td>+977 9857010224</td>
+            </tr>
+            <tr>
+                <td>Asst. Prof. Kamal Regmi</td>
+                <td>Advisor</td>
+                <td>+977 9847080477</td>
+            </tr>
+            <tr>
+                <td>Dr. Aakrit Rizal</td>
+                <td>Founding President</td>
+                <td>+977 9843017495</td>
+            </tr>
+            <tr>
+                <td>Anish Gyawali</td>
+                <td>Former President</td>
+                <td>+977 9867230656</td>
+            </tr>
+            <tr>
+                <td>Utsab Sapkota</td>
+                <td>Former President</td>
+                <td>+977 9845352600</td>
+            </tr>
+            <tr>
+                <td>Pradeep Bhusal</td>
+                <td>President</td>
+                <td>+977 9840950150</td>
+            </tr>
+            <tr>
+                <td>Saraswoti Gautam</td>
+                <td>Applied Co-ordinator</td>
+                
+            </tr>
+            <tr>
+                <td>Ritu Bhattarai</td>
+                <td>Social Media Coordinator</td>
+                
+            </tr>
+            <tr>
+                <td>Manisha Dhakal</td>
+                <td>Social Coordinator</td>
+               
+            </tr>
+            <tr>
+                <td>Reshma KC</td>
+                <td>Vice President</td>
+                
+            </tr>
+            <tr>
+                <td>Arbin Dawadi</td>
+                <td>Secretary</td>
+                <td>+977 9866040987</td>
+            </tr>
+            <tr>
+                <td>Sadikshya Bhattarai</td>
+                <td>Vice-Secretary</td>
+                
+            </tr>
+            <tr>
+                <td>Indu Panthi</td>
+                <td>Treasurer</td>
+                <td>+977 9867328882</td>
+            </tr>
+            <tr>
+                <td>Kritima Sapkota, Samikshya Khanal, Amrit Bhusal, Prabin Thapa, Bishal Kunwar, Kalyan Aryan, Sanjay Yadav, Sandeep Mourya</td>
+                <td>Members</td>
+                
+            </tr>
+        </table>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 YEAST | All Rights Reserved</p>
+    </footer>
+
 </body>
 </html>
