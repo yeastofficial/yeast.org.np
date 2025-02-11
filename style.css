@@ -148,3 +148,36 @@ footer {
         padding: 30px;
     }
 }
+/* Contact Section */
+.contact-section {
+    background-color: #1a1a1a;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+}
+
+.contact-section h2 {
+    color: #00FFFF;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-group {
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 15px;
+    border-left: 4px solid #00FFFF;
+}
+
+.contact-group h3 {
+    font-size: 22px;
+    color: #00FFFF;
+    margin-bottom: 10px;
+}
+
+.contact-group p {
+    font-size: 16px;
+    margin: 8px 0;
+    line-height: 1.6;
+}
