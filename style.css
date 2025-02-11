@@ -101,23 +101,16 @@ nav ul li a:hover {
     font-size: 26px;
 }
 
-/* Contact Table */
-.contact-table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
-}
-
-.contact-table th, .contact-table td {
-    border: 1px solid #00FFFF;
-    padding: 10px;
+.contact-section .contact-info {
     text-align: left;
-    font-size: 16px;
+    max-width: 600px;
+    margin: auto;
 }
 
-.contact-table th {
-    background-color: #00FFFF;
-    color: black;
+.contact-section .contact-info p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: white;
 }
 
 /* Profile Photo */
@@ -153,9 +146,5 @@ footer {
     
     .content {
         padding: 30px;
-    }
-    
-    .contact-table {
-        width: 100%;
     }
 }
