@@ -54,7 +54,7 @@ header .nav li a:hover {
 /* Hero Section */
 .hero {
     background-image: url('Background.jpg');
-    background-size: cover;
+    background-size: full;
     color: white;
     padding: 100px 0;
     text-align: center;
