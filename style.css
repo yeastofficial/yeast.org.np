@@ -11,13 +11,24 @@ header {
     padding: 20px;
     text-align: center;
 }
-
 header h1 {
     font-size: 36px;
     margin: 0;
 }
 
-/* Navigation */
+/* Header Section with Logo */
+header .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+header .logo-container img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+/* Navigation Menu */
 nav {
     background-color: #333;
     overflow: hidden;
@@ -37,15 +48,25 @@ nav a:hover {
     color: black;
 }
 
-/* Main Sections */
-section {
+/* About Us Section */
+section#about {
     padding: 40px;
     text-align: center;
+    background-color: #ffffff;
 }
 
-/* About Us Section */
-#about {
-    margin-top: 30px;
+/* Projects Section */
+section#projects {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+/* Team Section */
+section#team {
+    padding: 40px;
+    text-align: center;
+    background-color: #ffffff;
 }
 
 h2 {
@@ -53,29 +74,17 @@ h2 {
     margin-bottom: 20px;
     text-decoration: underline;
 }
-/* Advisor and Executive Board Styles */
-.advisor {
-    background-color: pink;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
 
-.executive-board {
-    background-color: lightgreen;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-
-/* Team Section */
+/* Team Categories */
 .team-category {
     margin-bottom: 40px;
 }
 
+/* Team Member Styling */
 .team-member {
     text-align: center;
     width: 150px;
+    margin: 10px;
 }
 
 .team-member img {
@@ -90,37 +99,10 @@ h2 {
     font-weight: bold;
 }
 
-/* Contact Section */
-.contact-form {
-    margin: 20px 0;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-}
-
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-}
-
-button {
-    background-color: #00FFFF;
-    border: none;
-    padding: 12px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #ddd;
+.team-category h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
 }
 
 /* Footer Section */
@@ -135,34 +117,85 @@ footer p {
     margin: 0;
 }
 
-/* Team Members Flex */
-.team-container {
+/* Contact Section */
+section#contact {
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.contact-form {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.team-member {
-    text-align: center;
-    width: 150px;
+.contact-form .form-group {
+    margin-bottom: 15px;
 }
 
-/* Team Member Image and Details */
-.team-member img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.team-member p {
-    margin-top: 10px;
+.contact-form label {
     font-weight: bold;
 }
 
-/* Contact Info */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #00FFFF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #33cccc;
+}
+
 .contact-info {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
+}
+
+/* News Section */
+section#news {
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.news-item h4 {
+    margin-top: 0;
+}
+
+.news-item p {
+    font-size: 16px;
+}
+
+.news-item a {
+    color: #00FFFF;
+    text-decoration: none;
+}
+
+.news-item a:hover {
+    text-decoration: underline;
 }
