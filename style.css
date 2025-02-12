@@ -53,6 +53,20 @@ h2 {
     margin-bottom: 20px;
     text-decoration: underline;
 }
+/* Advisor and Executive Board Styles */
+.advisor {
+    background-color: pink;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.executive-board {
+    background-color: lightgreen;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
 
 /* Team Section */
 .team-category {
