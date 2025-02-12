@@ -143,3 +143,29 @@ header .nav li a:hover {
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 10px;
+/* Style for Get Involved photo */
+#get-involved .photo-section img {
+    width: 150px;  /* Set the width to a fixed value */
+    height: 150px; /* Set the height to a fixed value */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    border-radius: 50%; /* Optional: To make the photo circular */
+}
+/* Style for News photo */
+#news .photo-section img {
+    width: 150px;  /* Set the width to a fixed value */
+    height: 150px; /* Set the height to a fixed value */
+    object-fit: cover; /* Ensures the image covers the area without distorting */
+    border-radius: 50%; /* Optional: To make the photo circular */
+}
+/* Footer Section */
+footer {
+    background-color: #28a745;  /* Green background */
+    color: white;               /* White text color */
+    text-align: center;         /* Center the text */
+    padding: 20px 0;            /* Add padding for spacing */
+    font-size: 14px;            /* Adjust font size */
+}
+
+footer p {
+    margin: 0;                  /* Remove margin from the paragraph */
+}
