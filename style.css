@@ -1,3 +1,59 @@
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00FFFF; /* Your brand color */
+    padding: 20px;
+    color: white;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.organization-name {
+    flex: 3;
+    text-align: center;
+}
+
+.organization-name h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.slogan {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
 /* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
