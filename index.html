@@ -1,441 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YEAST - Youth for Environment And Social Transformation (YEAST)</title>
+    <title>YEAST - Youth for Environment And Social Transformation</title>
     <style>
-        /* Global Styles */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
-
-        h1, h2, h3, h4 {
-            color: #333;
-        }
-
-        a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        /* Header Section */
         header {
             background-color: #00FFFF;
-            color: white;
-            padding: 10px 0;
+            color: #000;
+            padding: 20px;
             text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
-
-        header .logo {
-            float: left;
-            margin-left: 20px;
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #005f73;
         }
-
-        header .nav {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
         }
-
-        header .nav li {
-            display: inline;
-            margin: 0 20px;
-        }
-
-        header .nav li a {
-            font-weight: bold;
-            color: white;
-        }
-
-        header .nav li a:hover {
+        nav a:hover {
+            background-color: #00FFFF;
             color: #000;
         }
-
-        /* Hero Section */
-        .hero {
-            background-image: url('Background.jpg');
-            background-size: cover;
-            color: white;
-            padding: 100px 0;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 50px;
-        }
-
-        .hero p {
-            font-size: 20px;
-            margin-top: 20px;
-        }
-
-        /* About Us Section */
-        .about {
-            background-color: #f4f4f4;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .about h2 {
-            font-size: 30px;
-            margin-bottom: 20px;
-        }
-
-        .about p {
-            font-size: 18px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        /* Programs Section */
-        .programs {
-            background-color: #e2e2e2;
-            padding: 60px 20px;
-        }
-
-        .programs h2 {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .programs .program-card {
-            display: inline-block;
-            background-color: #fff;
-            padding: 20px;
-            width: 30%;
-            margin: 10px;
-            text-align: center;
+        .section {
+            padding: 40px;
+            margin: 20px;
+            background: #fff;
+            border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
-        .programs .program-card img {
-            width: 100%;
-            height: auto;
-        }
-
-        /* Team Section */
-        .team {
-            background-color: #fff;
-            padding: 60px 20px;
-        }
-
-        .team h2 {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .team .member {
-            display: inline-block;
-            width: 200px;
-            margin: 20px;
-            text-align: center;
-        }
-
-        .team .member img {
-            width: 100%;
-            height: auto;
-            border-radius: 50%;
-        }
-
-        .team .member h3 {
-            font-size: 18px;
-            margin-top: 10px;
-        }
-
-        /* Contact Section */
-        .contact {
-            background-color: #00FFFF;
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .contact form {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        .contact form input,
-        .contact form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            border: 1px solid #ddd;
-        }
-
-        .contact form button {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .contact form button:hover {
-            background-color: #000;
-        }
-
-        /* Footer Section */
         footer {
-            background-color: #333;
-            color: white;
-            padding: 20px;
+            background-color: #005f73;
+            color: #fff;
             text-align: center;
+            padding: 10px 0;
         }
-
-        footer a {
-            color: #00FFFF;
+        .photo-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 20px;
         }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        /* Google Map */
-        #map {
-            height: 400px;
-            width: 100%;
-        }
-
     </style>
 </head>
-
 <body>
-
-    <!-- Header Section -->
     <header>
-        <div class="logo">
-            <img src="Untitled-2.png" alt="YEAST Logo" height="50">
-        </div>
-        <ul class="nav">
-            <li><a href="#home">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="#programs">Programs</a></li>
-            <li><a href="Team.html">Team</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
+        <h1>YEAST</h1>
+        <p>Youth for Environment And Social Transformation</p>
     </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#projects">Projects</a>
+        <a href="#team">Team</a>
+        <a href="#get-involved">Get Involved</a>
+        <a href="#news">News</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-    <!-- Hero Section -->
-    <div class="hero" id="home">
-        <h1>Welcome to YEAST</h1>
-        <p>Better Environment, Better Society</p>
+    <div id="home" class="section">
+        <h2>Welcome to YEAST</h2>
+        <p>We are dedicated to empowering youth for environmental and social transformation.</p>
+        <div class="photo-section">
+            <img src="/path-to-your-photo/home.jpg" alt="YEAST Activities">
+        </div>
     </div>
 
-    <!-- About Us Section -->
-    <div class="about" id="about">
+    <div id="about" class="section">
         <h2>About Us</h2>
-        <p>Youth for Environment And Social Transformation (YEAST), a typical stage for every one of the imaginative personalities, was established as a non-profit, non-governmental organization. The organization was established on 17th April 2022 by the inception of dynamic understudies of different establishments connected with applied sciences alongside the guidance of senior educators as consultants.
-
-Essentially, the organization aims to enhance the development of character and leadership abilities in students by conducting various training, discussions, debate sessions, courses, and meetings. It also works to spread the knowledge and skills learned to local farmers. YEAST aims to bridge the gap between rural, environmental, and social education and local communities, helping them understand things more appropriately and practically at the ground level.
-
-YEAST has been working in various fields, including the environment, social issues, education, veterinary, and agricultural sectors, since its foundation.</p>
-    </div>
-
-    <!-- Programs Section -->
-    <div class="programs" id="programs">
-        <h2>Our Programs</h2>
-        <div class="program-card">
-            <img src="program1.jpg" alt="Program 1">
-            <h3>Program 1</h3>
-            <p>Description of Program 1</p>
-        </div>
-        <div class="program-card">
-            <img src="program2.jpg" alt="Program 2">
-            <h3>Program 2</h3>
-            <p>Description of Program 2</p>
-        </div>
-        <div class="program-card">
-            <img src="program3.jpg" alt="Program 3">
-            <h3>Program 3</h3>
-            <p>Description of Program 3</p>
+        <p>YEAST is a non-governmental organization founded to foster youth leadership in environmental and social development.</p>
+        <div class="photo-section">
+            <img src="Untitled-2.png" alt="About YEAST">
         </div>
     </div>
 
-    <div class="team">
-    <h2>Advisors</h2>
-    <div class="member">
-        <img src="huma_neupane.jpg" alt="Huma Neupane">
-        <h3>Huma Neupane, PhD</h3>
-        <p>Director, DORP, IAAS, TU</p>
-    </div>
-    <div class="member">
-        <img src="kamal_regmi.jpg" alt="Kamal Regmi">
-        <h3>Asst.Prof.Kamal Regmi</h3>
-        <p>IAAS, TU</p>
-    </div>
-    <div class="member">
-        <img src="akrit_rijal.jpg" alt="Akrit Rijal">
-        <h3>Dr. Akrit Rijal</h3>
-        <p>Founder President</p>
-    </div>
-    <div class="member">
-        <img src="anish_gyawali.jpg" alt="Anish Gyawali">
-        <h3>Anish Gyawali</h3>
-        <p>Founder Secretary/Former President</p>
-    </div>
-    <div class="member">
-        <img src="utsab_sapkota.jpg" alt="Utsab Sapkota">
-        <h3>utsab-sapkota</h3>
-        <p>Former President</p>
-    </div>
-
-    <h2>Executive Board</h2>
-    <div class="member">
-        <img src="pradeep-bhusal.jpg" alt="Pradeep Bhusal">
-        <h3>Pradeep Bhusal</h3>
-        <p>President</p>
-    </div>
-    <div class="member">
-        <img src="saraswoti-gautam.jpg" alt="Saraswoti Gautam">
-        <h3>Saraswoti Gautam</h3>
-        <p>Applied Co-ordinator</p>
-    </div>
-    <div class="member">
-        <img src="ritu-bhattarai.jpg" alt="Ritu Bhattarai">
-        <h3>Ritu Bhattarai</h3>
-        <p>Social Media Coordinator</p>
-    </div>
-    <div class="member">
-        <img src="manisha-dhakal.jpg" alt="Manisha Dhakal">
-        <h3>Manisha Dhakal</h3>
-        <p>Social Coordinator</p>
-    </div>
-    <div class="member">
-        <img src="reshma-kc.jpg" alt="Reshma KC">
-        <h3>Reshma KC</h3>
-        <p>Vice President</p>
-    </div>
-    <div class="member">
-        <img src="arbin-dawadi.jpg" alt="Arbin Dawadi">
-        <h3>Arbin Dawadi</h3>
-        <p>Secretary</p>
-    </div>
-    <div class="member">
-        <img src="sadikshya-bhattarai.jpg" alt="Sadikshya Bhattarai">
-        <h3>Sadikshya Bhattarai</h3>
-        <p>Vice-Secretary</p>
-    </div>
-    <div class="member">
-        <img src="indu_panthi.JPG" alt="Indu Panthi">
-        <h3>Indu Panthi</h3>
-        <p>Treasurer</p>
-    </div>
-
-    <h2>Members</h2>
-    <div class="member">
-        <img src="kritima-sapkota.jpg" alt="Kritima Sapkota">
-        <h3>Kritima Sapkota</h3>
-    </div>
-    <div class="member">
-        <img src="samikshya-khanal.jpg" alt="Samikshya Khanal">
-        <h3>Samikshya Khanal</h3>
-    </div>
-    <div class="member">
-        <img src="amrit-bhusal.jpg" alt="Amrit Bhusal">
-        <h3>Amrit Bhusal</h3>
-    </div>
-    <div class="member">
-        <img src="prabin-thapa.jpg" alt="Prabin Thapa">
-        <h3>Prabin Thapa</h3>
-    </div>
-    <div class="member">
-        <img src="bishal-kunwar.jpg" alt="Bishal Kunwar">
-        <h3>Bishal Kunwar</h3>
-    </div>
-    <div class="member">
-        <img src="kalyan-aryan.jpg" alt="Kalyan Aryan">
-        <h3>Kalyan Aryan</h3>
-    </div>
-    <div class="member">
-        <img src="sanjay-yadav.jpg" alt="Sanjay Yadav">
-        <h3>Sanjay Yadav</h3>
-    </div>
-    <div class="member">
-        <img src="sandeep-mourya.jpg" alt="Sandeep Mourya">
-        <h3>Sandeep Mourya</h3>
-    </div>
-</div>
-
-       
-    </div>
-    </div>
-
-    <section class="contact-section">
-    <h2>Contact Us</h2>
-    <p>We’d love to hear from you! Reach out to us through the following details.</p>
-
-    <div class="contact-info">
-        <div class="contact-item">
-            <strong>📞 Phone:</strong> <a href="tel:+9779867230656">+977-9867230656</a>
-        </div>
-        <div class="contact-item">
-            <strong>📍 Address:</strong> Siddharthanagar-2, Rupandehi
-        </div>
-        <div class="contact-item">
-            <strong>✉️ Email:</strong> <a href="mailto:yeast2018official@gmail.com">yeast2018official@gmail.com</a>
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        <p>Explore our initiatives aimed at sustainable development and community engagement.</p>
+        <div class="photo-section">
+            <img src="Background.jpg" alt="Our Projects">
         </div>
     </div>
 
-    <!-- Google Maps Embed -->
-    <div class="map-container">
-        <iframe 
-            src="https://maps.google.com/maps?q=Siddharthanagar-2,%20Rupandehi&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-            width="100%" 
-            height="300" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy">
-        </iframe>
+    <div id="team" class="section">
+        <h2>Team</h2>
+        <p>Meet the dynamic individuals behind YEAST.</p>
+        <div class="photo-section">
+            <img src="/path-to-your-photo/team.jpg" alt="Our Team">
+        </div>
     </div>
 
-    <!-- Contact Form -->
-    <form class="contact-form">
-        <h3>Send Us a Message</h3>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="text" name="phone" placeholder="Your Phone Number" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-    </form>
-</section>
-
-
+    <div id="get-involved" class="section">
+        <h2>Get Involved</h2>
+        <p>Join us in making a difference. Volunteer or support our causes.</p>
+        <div class="photo-section">
+            <img src="/path-to-your-photo/get-involved.jpg" alt="Get Involved">
+        </div>
     </div>
 
-    <!-- Footer Section -->
+    <div id="news" class="section">
+        <h2>News</h2>
+        <p>Stay updated with our latest activities and achievements.</p>
+        <div class="photo-section">
+            <img src="/path-to-your-photo/news.jpg" alt="Latest News">
+        </div>
+    </div>
+
+    <div id="blog" class="section">
+        <h2>Blog</h2>
+        <p>Read inspiring stories and articles from our community.</p>
+        <div class="photo-section">
+            <img src="/path-to-your-photo/blog.jpg" alt="Our Blog">
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you! Reach out to us for any queries or collaborations.</p>
+        <div class="photo-section">
+            <img src="Yeast LOgo (1).jpg" alt="Contact Us">
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2025 YEAST. All rights reserved.</p>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        <p>&copy; 2025 YEAST. All Rights Reserved.</p>
     </footer>
-
-    <script>
-        function initMap() {
-            var location = { lat: 27.5753, lng: 85.5348 }; // Coordinates for your location
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: location
-            });
-            var marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
-    </script>
-    <script src="https://maps.app.goo.gl/DMYKYskjnrVfKyYE7" async defer></script>
 </body>
-
 </html>
