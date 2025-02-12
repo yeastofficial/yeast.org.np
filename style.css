@@ -49,7 +49,16 @@ nav a:hover {
     background-color: #ddd;
     color: black;
 }
-
+/* Background Image Section */
+        .background-section {
+            background-image: url(Background.jpg);
+            background-size: cover; 
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+            height: 400px; /
+        }
 /* About Us Section */
 section#about {
     padding: 40px;
