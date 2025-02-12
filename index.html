@@ -5,338 +5,299 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YEAST - Youth for Environment And Social Transformation</title>
     <style>
-        /* Reset some default styles */
-        * {
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
-
-        /* Fullscreen Hero Section */
-        .hero {
-            position: relative;
-            height: 100vh;
-            background-image: url('your-image-url.jpg'); /* Add your background image URL here */
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #fff;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            font-weight: bold;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin: 20px 0;
-        }
-
-        .hero .cta-button {
-            padding: 10px 20px;
-            font-size: 1rem;
-            background-color: #00FFFF; /* Your brand color */
-            color: #000;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-
-        .hero .cta-button:hover {
-            background-color: #00b3b3;
-        }
-
-        /* Navigation Bar */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
-            padding: 10px 20px;
-            z-index: 1000;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
-
-        nav ul li {
-            list-style: none;
-            margin: 0 15px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.2rem;
-        }
-
-        nav ul li a:hover {
-            color: #00FFFF; /* Your brand color */
-        }
-
-        /* Footer */
-        footer {
-            background-color: #00FFFF; /* Your brand color */
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        /* Additional Section Styles */
-        .section {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .section h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .section p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        /* Volunteer Button */
-        .volunteer-btn {
-            padding: 12px 24px;
+        /* General Layout */
+        header {
             background-color: #00FFFF;
-            color: #000;
-            font-size: 1.2rem;
-            border-radius: 5px;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
             text-decoration: none;
-            transition: background-color 0.3s;
         }
 
-        .volunteer-btn:hover {
-            background-color: #00b3b3;
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
         }
 
-        /* About Us Section */
-        .about-us {
-            background-color: #f1f1f1;
-            padding: 50px 20px;
-            color: #333;
+        section {
+            padding: 40px;
+            text-align: center;
         }
 
-        /* Projects Section */
-        .projects {
-            background-color: #fafafa;
-            padding: 50px 20px;
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
         }
+
+        .team div {
+            text-align: center;
+        }
+
+        .team img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .team p {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Section Titles */
+        h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-decoration: underline;
+        }
+
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+            width: 150px;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .team-member p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>Youth for Environment And Social Transformation (YEAST)</h1>
+</header>
+
+<!-- Navigation Menu -->
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#projects">Projects</a>
+    <a href="#team">Team</a>
+    <a href="#contact">Contact</a>
+    <a href="#news">News</a>
+</nav>
+
+<!-- About Us Section -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>Youth for Environment And Social Transformation (YEAST), a typical stage for every one of the imaginative personalities, was established as a non-profit, non-governmental organization on 17th April 2022. The organization was established by the inception of dynamic students of various institutions connected with applied sciences, alongside the guidance of senior educators as consultants. The primary goal of the organization is to enhance the development of character and leadership abilities in students by conducting various training, discussions, debate sessions, courses, and meetings, and also to spread the knowledge and skills learned to the local farmers. Essentially, it aims to bridge the gap between rural, environmental, and social education and the local people around the country, which will help to understand things more appropriately and practically at the ground level. YEAST has been working in various fields, including the environment, social issues, education, veterinary, and agricultural sectors, since its foundation.</p>
+</section>
+
+<!-- Projects Section -->
+<section id="projects">
+    <h2>Our Projects</h2>
+    <p>Details of our ongoing and past projects will be listed here.</p>
+</section>
+
 <!-- Team Section -->
-<section class="team" id="team">
-    <div>
-        <h2>Meet Our Team</h2>
-        <div>
-            <img src="team-member1.jpg" alt="Huma Neupane, PhD" />
+<section id="team">
+    <h2>Meet Our Team</h2>
+    <div class="team-container">
+        <!-- Team Member 1 -->
+        <div class="team-member">
+            <img src="huma_neupane.jpg" alt="Huma Neupane, PhD">
             <p>Huma Neupane, PhD - Director, DORP, IAAS, TU</p>
         </div>
-        <div>
-            <img src="team-member2.jpg" alt="Asst. Prof. Kamal Regmi" />
+        <!-- Team Member 2 -->
+        <div class="team-member">
+            <img src="kamal_regmi.jpg" alt="Asst. Prof. Kamal Regmi">
             <p>Asst. Prof. Kamal Regmi - IAAS, TU</p>
         </div>
-        <div>
-            <img src="team-member3.jpg" alt="Dr. Akrit Rijal" />
+        <!-- Team Member 3 -->
+        <div class="team-member">
+            <img src="akrit_rijal.jpg" alt="Dr. Akrit Rijal">
             <p>Dr. Akrit Rijal - Founder President</p>
         </div>
-        <div>
-            <img src="team-member4.jpg" alt="Anish Gyawali" />
+        <!-- Team Member 4 -->
+        <div class="team-member">
+            <img src="anish_gyawali.jpg" alt="Anish Gyawali">
             <p>Anish Gyawali - Founder Secretary/Former President</p>
         </div>
-        <div>
-            <img src="team-member5.jpg" alt="Utsab Sapkota" />
+        <!-- Team Member 5 -->
+        <div class="team-member">
+            <img src="utsab_sapkota.jpg" alt="Utsab Sapkota">
             <p>Utsab Sapkota - Former President</p>
         </div>
-        <div>
-            <img src="team-member6.jpg" alt="Pradeep Bhusal" />
+        <!-- Team Member 6 -->
+        <div class="team-member">
+            <img src="Untitled-2.png" alt="Pradeep Bhusal">
             <p>Pradeep Bhusal - President</p>
         </div>
-        <div>
-            <img src="team-member7.jpg" alt="Saraswoti Gautam" />
+        <!-- Team Member 7 -->
+        <div class="team-member">
+            <img src="Untitled-2.png" alt="Saraswoti Gautam">
             <p>Saraswoti Gautam - Applied Co-ordinator</p>
         </div>
-        <div>
-            <img src="team-member8.jpg" alt="Ritu Bhattarai" />
+        <!-- Team Member 8 -->
+        <div class="team-member">
+            <img src="Untitled-2.png" alt="Ritu Bhattarai">
             <p>Ritu Bhattarai - Social Media Coordinator</p>
         </div>
-        <div>
-            <img src="team-member9.jpg" alt="Manisha Dhakal" />
+        <!-- Team Member 9 -->
+        <div class="team-member">
+            <img src="Untitled-2.png" alt="Manisha Dhakal">
             <p>Manisha Dhakal - Social Coordinator</p>
         </div>
-        <div>
-            <img src="team-member10.jpg" alt="Reshma KC" />
+        <!-- Team Member 10 -->
+        <div class="team-member">
+            <img src="Untitled-2.png" alt="Reshma KC">
             <p>Reshma KC - Vice President</p>
         </div>
-        <div>
-            <img src="team-member11.jpg" alt="Arbin Dawadi" />
+        <!-- Team Member 11 -->
+        <div class="team-member">
+            <img src="Untitled-2.png" alt="Arbin Dawadi">
             <p>Arbin Dawadi - Secretary</p>
         </div>
-        <div>
-            <img src="team-member12.jpg" alt="Sadikshya Bhattarai" />
+        <!-- Team Member 12 -->
+        <div class="team-member">
+            <img src="Untitled-2.png" alt="Sadikshya Bhattarai">
             <p>Sadikshya Bhattarai - Vice-Secretary</p>
         </div>
-        <div>
-            <img src="team-member13.jpg" alt="Indu Panthi" />
+        <!-- Team Member 13 -->
+        <div class="team-member">
+            <img src="indu_panthi.JPG" alt="Indu Panthi">
             <p>Indu Panthi - Treasurer</p>
         </div>
-        <div>
-            <img src="team-member14.jpg" alt="Kritima Sapkota" />
+        <!-- Team Member 14 -->
+        <div class="team-member">
+            <img src="Untitled-2.png" alt="Kritima Sapkota">
             <p>Kritima Sapkota - Member</p>
         </div>
-        <div>
-            <img src="team-member15.jpg" alt="Samikshya Khanal" />
+        <!-- Team Member 15 -->
+        <div class="team-member">
+            <img src="team-member15.jpg" alt="Samikshya Khanal">
             <p>Samikshya Khanal - Member</p>
         </div>
-        <div>
-            <img src="team-member16.jpg" alt="Amrit Bhusal" />
+        <!-- Team Member 16 -->
+        <div class="team-member">
+            <img src="team-member16.jpg" alt="Amrit Bhusal">
             <p>Amrit Bhusal - Member</p>
         </div>
-        <div>
-            <img src="team-member17.jpg" alt="Prabin Thapa" />
+        <!-- Team Member 17 -->
+        <div class="team-member">
+            <img src="team-member17.jpg" alt="Prabin Thapa">
             <p>Prabin Thapa - Member</p>
         </div>
-        <div>
-            <img src="team-member18.jpg" alt="Bishal Kunwar" />
+        <!-- Team Member 18 -->
+        <div class="team-member">
+            <img src="team-member18.jpg" alt="Bishal Kunwar">
             <p>Bishal Kunwar - Member</p>
         </div>
-        <div>
-            <img src="team-member19.jpg" alt="Kalyan Aryan" />
+        <!-- Team Member 19 -->
+        <div class="team-member">
+            <img src="team-member19.jpg" alt="Kalyan Aryan">
             <p>Kalyan Aryan - Member</p>
         </div>
-        <div>
-            <img src="team-member20.jpg" alt="Sanjay Yadav" />
+        <!-- Team Member 20 -->
+        <div class="team-member">
+            <img src="team-member20.jpg" alt="Sanjay Yadav">
             <p>Sanjay Yadav - Member</p>
         </div>
-        <div>
-            <img src="team-member21.jpg" alt="Sandeep Mourya" />
+        <!-- Team Member 21 -->
+        <div class="team-member">
+            <img src="team-member21.jpg" alt="Sandeep Mourya">
             <p>Sandeep Mourya - Member</p>
         </div>
     </div>
 </section>
 
-        /* Team Section */
-        .team {
-            background-color: #e2e2e2;
-            padding: 50px 20px;
-        }
-
-        .team img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin: 10px;
-        }
-
-        /* Contact Section */
-        .contact {
-            background-color: #f1f1f1;
-            padding: 50px 20px;
-            color: #333;
-        }
-
-        /* News Section */
-        .news {
-            background-color: #fafafa;
-            padding: 50px 20px;
-        }
-
-        /* Links */
-        a {
-            color: inherit;
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#news">News</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section (Front Cover) -->
-    <section class="hero" id="home">
-        <div>
-            <h1>Welcome to YEAST</h1>
-            <p>Your introduction to Youth for Environment And Social Transformation.</p>
-            <a href="#about-us" class="cta-button">Learn More</a>
+<!-- Contact Section -->
+<section id="contact">
+   <section id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like to get in touch, please feel free to reach out to us using the form below. We would love to hear from you!</p>
+    
+    <!-- Contact Form -->
+    <form action="/submit_form" method="post" class="contact-form">
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
         </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section class="about-us" id="about-us">
-        <div>
-            <h2>About Us</h2>
-            <p>Youth for Environment And Social Transformation (YEAST), a typical stage for every one of the imaginative personalities, was established as a non-profit, non-governmental organization on 17th April 2022. The organization was established by the inception of dynamic students of various institutions connected with applied sciences, alongside the guidance of senior educators as consultants. The primary goal of the organization is to enhance the development of character and leadership abilities in students by conducting various training, discussions, debate sessions, courses, and meetings, and also to spread the knowledge and skills learned to the local farmers. Essentially, it aims to bridge the gap between rural, environmental, and social education and the local people around the country, which will help to understand things more appropriately and practically at the ground level. YEAST has been working in various fields, including the environment, social issues, education, veterinary, and agricultural sectors, since its foundation.</p>
+        
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" required>
         </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div>
-            <h2>Our Projects</h2>
-            <p>We have been actively engaged in several projects aimed at environmental conservation, social development, and promoting sustainable farming practices across Nepal.</p>
+        
+        <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
         </div>
-    </section>
+        
+        <button type="submit">Send Message</button>
+    </form>
+    
+    <!-- Contact Information -->
+    <div class="contact-info">
+        <p><strong>Email:</strong> info@yeast.org.np</p>
+        <p><strong>Phone:</strong> +977-9867230656</p>
+        <p><strong>Address:</strong> Rupandehi, Nepal</p>
+    </div>
+</section>
 
-    <!-- Team Section -->
-    <section class="team" id="team">
-        <div>
-            <h2>Meet Our Team</h2>
-            <div>
-                <img src="team-member1.jpg" alt="Team Member 1">
-                <p>Pradeep Bhusal, President</p>
-            </div>
-            <div>
-                <img src="team-member2.jpg" alt="Team Member 2">
-                <p>Saraswoti Gautam, Applied Co-ordinator</p>
-            </div>
-            <div>
-                <img src="team-member3.jpg" alt="Team Member 3">
-                <p>Ritu Bhattarai, Social Media Coordinator</p>
-            </div>
-            <!-- Add other team members similarly -->
-        </div>
-    </section>
+<!-- News Section -->
+<section id="news">
+    <h2>Our Latest News</h2>
+    <p>Details of our recent updates and events will be listed here.</p>
+</section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div>
-            <h2>Contact Us</h2>
-            <p>For more information or to get involved with YEAST, please reach out to us:</p>
-            <p>Email: info@yeast.org.np</p>
-            <p>Phone: +977-123456789</p>
-            <p>Address: Your office address here</p>
-        </div>
-    </section>
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2025 YEAST. All rights reserved.</p>
+    <p>Website designed by YEAST Team.</p>
+</footer>
 
-    <!-- News Section -->
-    <section class="news" id="news">
-        <div>
-            <h2>Our Latest News</h2>
-            <p>Stay updated with our latest activities, achievements, and events in the field of environment, social transformation, and agriculture.</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>All rights reserved | YEAST</p>
-    </footer>
 </body>
 </html>
