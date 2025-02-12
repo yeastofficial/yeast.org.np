@@ -1,65 +1,10 @@
-/* General Page Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #00FFFF; /* Your brand color */
-    padding: 20px;
-    color: white;
-}
-
-.logo-container {
-    flex: 1;
-}
-
-.logo {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-}
-
-.organization-name {
-    flex: 3;
-    text-align: center;
-}
-
-.organization-name h1 {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: bold;
-}
-
-.slogan {
-    font-style: italic;
-    font-size: 1.2rem;
-    margin-top: 5px;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: white;
-}
-/* Global Styles */
+/* General Page Styles */ 
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 h1, h2, h3, h4 {
@@ -73,18 +18,42 @@ a {
 
 /* Header Section */
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #00FFFF; /* Brand Color */
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 20px;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+header .logo-container {
+    flex: 1;
+}
+
 header .logo {
-    float: left;
-    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+header .organization-name {
+    flex: 3;
+    text-align: center;
+}
+
+header .organization-name h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header .organization-name .slogan {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-top: 5px;
 }
 
 header .nav {
@@ -110,7 +79,7 @@ header .nav li a:hover {
 /* Hero Section */
 .hero {
     background-image: url('Background.jpg');
-    background-size: full;
+    background-size: cover;
     color: white;
     padding: 100px 0;
     text-align: center;
@@ -169,34 +138,38 @@ header .nav li a:hover {
     height: auto;
 }
 
-/* General photo styling for team section */
-.team-photo {
-    width: 150px;  /* Adjust the size as needed */
-    height: 150px; /* Ensures the aspect ratio is 1:1 */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    border-radius: 50%; /* Optional: gives a circular appearance */
+/* Team Section */
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.team-member {
+    text-align: center;
+    margin: 20px;
+    flex: 1;
+    max-width: 200px;
+}
+
+.team-member .team-photo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
     margin-bottom: 10px;
 }
 
-/* Ensures the layout of team section is organized */
-.team-member {
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
-}
-
-/* Styling for the team member name and role */
 .team-member h3 {
     font-size: 16px;
     font-weight: bold;
 }
 
-/* Styling for the team member description and email */
 .team-member p {
     font-size: 14px;
     color: #333;
 }
-
 
 /* Contact Section */
 .contact {
@@ -269,7 +242,7 @@ footer a:hover {
         width: 100%;
     }
 
-    .team .member {
-        width: 100%;
+    .team-member {
+        max-width: 100%;
     }
 }
