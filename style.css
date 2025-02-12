@@ -19,13 +19,13 @@ header h1 {
 /* Header Section with Logo */
 header .logo-container {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin-top: 20px;
 }
 
 header .logo-container img {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 20px;
+    max-height: 20px;
 }
 
 /* Navigation Menu */
