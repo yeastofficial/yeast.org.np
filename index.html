@@ -1,256 +1,375 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sticky Navigation Bar</title>
-  <style>
-    /* Reset styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Youth for Environment And Social Transformation (YEAST) - Bridging the gap between rural, environmental, and social education in Nepal.">
+    <meta name="keywords" content="YEAST, Nepal, Environment, Youth Empowerment, Education, Agriculture">
+    <title>YEAST - Youth for Environment And Social Transformation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-    }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
 
-    /* Sticky Navbar */
-    .navbar {
-      position: sticky; /* Makes the navbar sticky */
-      top: 0; /* Navbar sticks to the top of the page */
-      z-index: 1000; /* Keeps it above other content */
-      background-color: #00FFFF; /* Your brand color */
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
-    }
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background-color: #00FFFF;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-    .navbar a {
-      text-decoration: none;
-      color: #000; /* Text color */
-      margin: 0 1rem;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
+        .navbar-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+        }
 
-    .navbar a:hover {
-      color: #0077B6; /* Change color on hover */
-    }
+        .navbar nav a {
+            margin: 0 1rem;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
 
-    .navbar-logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
+        .navbar nav a:hover {
+            color: #0077B6;
+        }
 
-    /* Add some content to scroll */
-    .content {
-      padding: 2rem;
-      height: 2000px; /* For demo purposes */
-    }
-  </style>
+        .hero {
+            height: 80vh;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/path-to-hero-image.jpg') no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #005f5f;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .advisor-card {
+            background-color: #FF69B4;
+            color: white;
+        }
+
+        .executive-card {
+            background-color: #87CEEB;
+            color: black;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #00FFFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar nav a {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
 </head>
+
 <body>
-  <header class="navbar">
-    <div class="navbar-logo">YEAST</div>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About Us</a>
-      <a href="#projects">Projects</a>
-      <a href="#team">Team</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <header>
+        <div class="navbar">
+            <a href="#" class="navbar-logo">YEAST</a>
+            <nav>
+                <a href="#about">About Us</a>
+                <a href="#projects">Projects</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+                <a href="#news">News</a>
+            </nav>
+        </div>
+    </header>
 
-  <div class="content">
-    <h1>Welcome to YEAST</h1>
-    <p>Scroll down to see the sticky navbar in action!</p>
-  </div>
-</body>
-</html>
-
-
-<!-- Header Section with Logo and Organizational Name -->
-<header>
-    <div class="logo-container">
-        <img src="Untitled-2.png" alt="YEAST Logo">
-    </div>
-    <h1>Youth for Environment And Social Transformation (YEAST)</h1>
-</header>
-
-<!-- Navigation Menu -->
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About Us</a>
-    <a href="#projects">Projects</a>
-    <a href="#team">Team</a>
-    <a href="#contact">Contact</a>
-    <a href="#news">News</a>
-</nav>
-
-<!-- Image Section (between Navigation and About Us) -->
-<section class="image-section">
+    <section class="hero">
+        <h1>Welcome to YEAST</h1>
+        <p>Empowering youth for environmental and social transformation</p>
     </section>
-    <section class="id">
-    <h2>Welcome to YEAST</h2>
-    <p>Empowering youth for social transformation and environmental sustainability.</p>
-</section>
 
-<!-- About Us Section -->
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        Youth for Environment And Social Transformation (YEAST) is a non-profit, non-governmental organization that was established on 17th April 2022. Founded by a group of dynamic students from various institutions specializing in applied sciences, along with the guidance of senior educators as consultants, YEAST is committed to enhancing the development of character and leadership abilities in youth. The organization achieves this by organizing a variety of training programs, discussions, debate sessions, courses, and meetings, which also benefit local farmers by spreading knowledge and skills.
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Youth for Environment And Social Transformation (YEAST) is a non-profit organization dedicated to empowering youth and bridging the gap between rural, environmental, and social education.</p>
+    </section>
 
-        YEAST's primary goal is to bridge the gap between rural, environmental, and social education, enabling individuals to understand issues more practically and effectively at the grassroots level. Since its inception, YEAST has been actively involved in multiple sectors, including environmental conservation, social issues, education, veterinary, and agriculture. Through its work, YEAST strives to empower youth and local communities to become change-makers who lead sustainable and socially responsible lives.
-    </p>
-</section>
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="/path-to-project1.jpg" alt="Project 1">
+                <div class="card-content">
+                    <h3>Project Title</h3>
+                    <p>Description of the project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-<!-- Projects Section -->
-<section id="projects">
-    <h2>Our Projects</h2>
-    <p>Details of our ongoing and past projects will be listed here.</p>
-</section>
-    
-<section id="team">
-    <h2>Our Team</h2>
-
-    <!-- Team Container -->
-    <div class="team-container">
-
-        <!-- Advisor Section -->
-        <div class="advisor-box">
-            <h3>Advisors</h3>
-            <div class="advisor-member">
+    <section id="team">
+        <h2>Meet Our Team</h2>
+<h2>Advisor</h2>
+        <div class="cards">
+            <div class="card advisor-card">
                 <img src="huma_neupane.jpg" alt="Huma Neupane">
-                <p>Huma Neupane, PhD - Director, DORP, IAAS, TU</p>
+                <div class="card-content">
+                    <h3>Huma Neupane, PhD</h3>
+                    <p>Director, DORP, IAAS, TU</p>
+                    <p>Email: huma@iaas.edu</p>
+                </div>
             </div>
-            <div class="advisor-member">
-                <img src="kamal_regmi.jpg" alt="Asst. Prof. Kamal Regmi">
-                <p>Asst. Prof. Kamal Regmi - IAAS, TU</p>
+            <div class="card advisor-card">
+                <img src="kamal_regmi.jpg" alt="Kamal Regmi">
+                <div class="card-content">
+                    <h3>Asst. Prof. Kamal Regmi</h3>
+                    <p>IAAS, TU</p>
+                    <p>Email: kamal@iaas.edu</p>
+                </div>
             </div>
-            <div class="advisor-member">
-                <img src="akrit_rijal.jpg" alt="Dr. Akrit Rijal">
-                <p>Dr. Akrit Rijal - Founder President</p>
+            <div class="card advisor-card">
+                <img src="Akrit_rijal.jpg" alt="Aakrit Rizal">
+                <div class="card-content">
+                    <h3>Dr. Aakrit Rizal</h3>
+                    <p>Founding President</p>
+                    <p>Email: aakrit@yeast.org.np</p>
+                </div>
             </div>
-            <div class="advisor-member">
+            <div class="card advisor-card">
                 <img src="anish_gyawali.jpg" alt="Anish Gyawali">
-                <p>Anish Gyawali - Founder Secretary/ Former President</p>
+                <div class="card-content">
+                    <h3>Anish Gyawali</h3>
+                    <p>Former President</p>
+                    <p>Email: anish@yeast.org.np</p>
+                </div>
             </div>
         </div>
-
-        <!-- Executive Board Section -->
-        <div class="executive-box">
-            <h3>Executive Board Members</h3>
-            <div class="executive-member">
+<h2>Executive Board 2024/25</h2>
+        <div class="cards">
+            <div class="card executive-card">
                 <img src="Untitled-2.png" alt="Pradeep Bhusal">
-                <p>Pradeep Bhusal - President</p>
+                <div class="card-content">
+                    <h3>Pradeep Bhusal</h3>
+                    <p>President</p>
+                    <p>Email: pradeep@yeast.org.np</p>
+                </div>
             </div>
-            <div class="executive-member">
-                <img src="Untitled-2.png" alt="Reshma KC">
-                <p>Reshma KC - Vice President</p>
+            <div class="card executive-card">
+                <img src="Untitled-2.png" alt="Saraswoti Gautam">
+                <div class="card-content">
+                    <h3>Saraswoti Gautam</h3>
+                    <p>Applied Coordinator</p>
+                    <p>Email: saraswoti@yeast.org.np</p>
+                </div>
             </div>
-            <div class="executive-member">
-                <img src="Untitled-2.png" alt="Arbin Dawadi">
-                <p>Arbin Dawadi - Secretary</p>
+            <div class="card executive-card">
+                <img src="Untitled-2.png" alt="Ritu Bhattarai">
+                <div class="card-content">
+                    <h3>Ritu Bhattarai</h3>
+                    <p>Social Media Coordinator</p>
+                    <p>Email: ritu@yeast.org.np</p>
+                </div>
             </div>
-            <div class="executive-member">
+            <div class="card executive-card">
+                <img src="Untitled-2.png" alt="Manisha Dhakal">
+                <div class="card-content">
+                    <h3>Manisha Dhakal</h3>
+                    <p>Social Coordinator</p>
+                    <p>Email: manisha@yeast.org.np</p>
+                </div>
+            </div>
+            <div class="card executive-card">
+                <img src="Untitled-2.png" alt="Resma KC">
+                <div class="card-content">
+                    <h3>Resma KC</h3>
+                    <p>Vice-President</p>
+                    <p>Email: resma@yeast.org.np</p>
+                </div>
+            </div>
+            <div class="card executive-card">
+                <img src="Untitled-2.png"" alt="Arbin Dawadi">
+                <div class="card-content">
+                    <h3>Arbin Dawadi</h3>
+                    <p>Secretary</p>
+                    <p>Email: arbin@yeast.org.np</p>
+                </div>
+            </div>
+            <div class="card executive-card">
                 <img src="indu_panthi.JPG" alt="Indu Panthi">
-                <p>Indu Panthi - Treasurer</p>
-        </div>
-        <!-- Team Member 14 -->
-        <div class="team-member">
-            <img src="Untitled-2.png" alt="Kritima Sapkota">
-            <p>Kritima Sapkota - Member</p>
-        </div>
-        <!-- Team Member 15 -->
-        <div class="team-member">
-            <img src="Untitled-2.png" alt="Samikshya Khanal">
-            <p>Samikshya Khanal - Member</p>
-        </div>
-        <!-- Team Member 16 -->
-        <div class="team-member">
-            <img src="Untitled-2.png" alt="Amrit Bhusal">
-            <p>Amrit Bhusal - Member</p>
-        </div>
-        <!-- Team Member 17 -->
-        <div class="team-member">
-            <img src="Untitled-2.png" alt="Prabin Thapa">
-            <p>Prabin Thapa - Member</p>
-        </div>
-        <!-- Team Member 18 -->
-        <div class="team-member">
-            <img src="Untitled-2.png" alt="Bishal Kunwar">
-            <p>Bishal Kunwar - Member</p>
-        </div>
-        <!-- Team Member 19 -->
-        <div class="team-member">
-            <img src="Untitled-2.png" alt="Kalyan Aryan">
-            <p>Kalyan Aryan - Member</p>
-        </div>
-        <!-- Team Member 20 -->
-        <div class="team-member">
-            <img src="Untitled-2.png" alt="Sanjay Yadav">
-            <p>Sanjay Yadav - Member</p>
-        </div>
-        <!-- Team Member 21 -->
-        <div class="team-member">
-            <img src="Untitled-2.png" alt="Sandeep Mourya">
-            <p>Sandeep Mourya - Member</p>
-        </div>
-    </div>
-</section>
+                <div class="card-content">
+                    <h3>Indu Panthi</h3>
+                    <p>Treasurer</p>
+                    <p>Email: indu@yeast.org.np</p>
+                </div>
+            </div>
+            <div class="card executive-card">
+                <img src="Untitled-2.png" alt="Kritima Sapkota">
+                <div class="card-content">
+                    <h3>Kritima Sapkota</h3>
+                    <p>Member</p>
+                    <p>Email: kritima@yeast.org.np</p>
+                </div>
+            </div>
+            <div class="card executive-card">
+                <img src="Untitled-2.png" alt="Samikshya Khanal">
+                <div class="card-content">
+                    <h3>Samikshya Khanal </h3>
+                    <p>Member</p>
+                    <p>Email: samikshya@yeast.org.np</p>
+                </div>
+            </div>
+            <div class="card executive-card">
+                <img src="Untitled-2.png" alt="Amrit Bhusal">
+                <div class="card-content">
+                    <h3>Amrit Bhusal </h3>
+                    <p>Member</p>
+                    <p>Email: amrit@yeast.org.np</p>
+                </div>
+            </div>
+            <div class="card executive-card">
+                <img src="Untitled-2.png" alt="Prabin Thapa">
+                <div class="card-content">
+                    <h3>Prabin Thapa</h3>
+                    <p>Member</p>
+                    <p>Email: prabin@yeast.org.np</p>
+                </div>
+            </div>
+ <div class="card executive-card">
+                <img src="Untitled-2.png" alt="Bishal Kunwar">
+                <div class="card-content">
+                    <h3>Bishal Kunwar </h3>
+                    <p>Member</p>
+                    <p>Email: bishal@yeast.org.np</p>
+                </div>
+            </div>
+            <div class="card executive-card">
+                <img src="Untitled-2.png" alt="Kalyan Aryal">
+                <div class="card-content">
+                    <h3>Kalyan Aryan </h3>
+                    <p>Member</p>
+                    <p>Email: kalyan@yeast.org.np</p>
+                </div>
+            </div>
+            <div class="card executive-card">
+                <img src="Untitled-2.png" alt="Sanjay Yadav">
+                <div class="card-content">
+                    <h3>Sanjay Yadav </h3>
+                    <p>Member</p>
+                    <p>Email: sanjay@yeast.org.np</p>
+                </div>
+            </div>
+            <div class="card executive-card">
+                <img src="Untitled-2.png" alt="Sandeep Mourya">
+                <div class="card-content">
+                    <h3>Sandeep Mourya </h3>
+                    <p>Member</p>
+                    <p>Email: sandeep@yeast.org.np</p>
+                </div>
+            </div>
+        </div>    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@yeast.org.np   or yeast2018official@gmail.com</p>
+        <p>Phone: +977-9867230656</p>
+        <p>Address: Siddharthanagar-2, Rupandehi, Nepal</p>
+    </section>
 
-<!-- Contact Section -->
-<section id="contact">
-   <section id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or would like to get in touch, please feel free to reach out to us using the form below. We would love to hear from you!</p>
-    
-    <!-- Contact Form -->
-    <form action="/submit_form" method="post" class="contact-form">
-        <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="email">Your Email</label>
-            <input type="email" id="email" name="email" required>
-        </div>
-        
-        <div class="form-group">
-            <label for="message">Your Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-        </div>
-        
-        <button type="submit">Send Message</button>
-    </form>
-    
-    <!-- Contact Information -->
-    <div class="contact-info">
-        <p><strong>Email:</strong> info@yeast.org.np</p>
-        <p><strong>Phone:</strong> +977-9867230656</p>
-        <p><strong>Address:</strong> Rupandehi, Nepal</p>
-    </div>
-</section>
-
-<!-- News Section -->
-<section id="news">
-    <h2>Our Latest News</h2>
-    <p>Details of our recent updates and events will be listed here.</p>
-</section>
-
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2025 YEAST. All rights reserved.</p>
-    <p>Website designed by Anish Gyawali.</p>
-</footer>
-
+    <footer>
+        <p>&copy; 2025 Youth for Environment And Social Transformation. All rights reserved.</p>
+        <a href="https://www.facebook.com/yeast2022">Facebook</a> | <a href="https://www.instagram.com/yeast">Instagram</a>
+      <p>Website designed by: Anish Gyawali</p>
+    </footer>
 </body>
+
 </html>
