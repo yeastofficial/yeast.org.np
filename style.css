@@ -1,9 +1,11 @@
+/* Resetting margin, padding, and box-sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Global Body Styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -11,6 +13,7 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Navbar Styling */
 .navbar {
     position: sticky;
     top: 0;
@@ -42,6 +45,7 @@ body {
     color: #0077B6;
 }
 
+/* Hero Section Styling */
 .hero {
     height: 80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Background.jpg') no-repeat center center/cover;
@@ -62,6 +66,7 @@ body {
     font-size: 1.2rem;
 }
 
+/* Section Styling */
 section {
     padding: 60px 20px;
     text-align: center;
@@ -73,6 +78,7 @@ section h2 {
     color: #005f5f;
 }
 
+/* Cards Section Styling */
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -107,6 +113,7 @@ section h2 {
     margin-bottom: 10px;
 }
 
+/* Specific Card Styles */
 .advisor-card {
     background-color: #FF69B4;
     color: white;
@@ -117,6 +124,7 @@ section h2 {
     color: black;
 }
 
+/* Footer Styling */
 footer {
     background-color: #333;
     color: #fff;
@@ -133,6 +141,33 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Projects Section Styling */
+#projects {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Justified content and full width */
+#projects .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#projects .project-container .project-item {
+    flex: 1 1 calc(33.333% - 20px);
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+#projects .project-container .project-item p {
+    text-align: justify;
+}
+
+/* Adjust for mobile view (for smaller screens) */
 @media (max-width: 768px) {
     .cards {
         flex-direction: column;
@@ -147,4 +182,26 @@ footer a:hover {
     .navbar nav a {
         margin: 0.5rem 0;
     }
+
+    /* Projects Section Responsive Layout */
+    #projects .project-container .project-item {
+        flex: 1 1 100%;
+    }
+}
+
+/* Light mode background color */
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark mode background color */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Apply dark mode-specific styles for text in the project section */
+body.dark-mode #projects .project-container .project-item p {
+    color: #e0e0e0;
 }
