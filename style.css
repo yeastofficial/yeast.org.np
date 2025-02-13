@@ -13,44 +13,43 @@ body {
   color: #333;
 }
 
-/* Header */
-header {
-  background-color: #00FFFF;
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-header .container {
+/* Sticky Navbar */
+.navbar {
+  position: sticky; /* Makes the navbar sticky */
+  top: 0; /* Sticks it to the top */
+  z-index: 1000; /* Ensures it stays above other elements */
+  background-color: #00FFFF; /* Brand color */
+  padding: 1rem 2rem; /* Space inside the navbar */
   display: flex;
+  justify-content: space-between; /* Space between logo and links */
   align-items: center;
-  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for prominence */
 }
 
-header .logo img {
-  max-height: 60px;
+/* Logo Styles */
+.navbar .logo img {
+  max-height: 60px; /* Logo size */
 }
 
-nav ul {
+.navbar nav ul {
   display: flex;
   list-style: none;
 }
 
-nav ul li {
+.navbar nav ul li {
   margin: 0 15px;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #333;
+.navbar nav ul li a {
+  text-decoration: none; /* Removes underline */
+  color: #000; /* Link color */
   font-size: 16px;
-  transition: color 0.3s;
+  font-weight: bold; /* Makes links prominent */
+  transition: color 0.3s ease; /* Smooth hover effect */
 }
 
-nav ul li a:hover {
-  color: #005f5f;
+.navbar nav ul li a:hover {
+  color: #0077B6; /* Hover color for links */
 }
 
 /* Hero Section */
@@ -60,98 +59,3 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
-  text-align: center;
-}
-
-.hero h1 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  font-size: 1.2rem;
-}
-
-/* Sections */
-section {
-  padding: 60px 20px;
-}
-
-section h2 {
-  font-size: 2.5rem;
-  color: #005f5f;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-section p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-/* Cards for Team and Projects */
-.card {
-  background-color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  overflow: hidden;
-  transition: transform 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-}
-
-.card-content {
-  padding: 20px;
-}
-
-.card-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.card-content p {
-  font-size: 1rem;
-  color: #555;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-footer a {
-  color: #00FFFF;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-}
