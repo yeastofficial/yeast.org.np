@@ -1,3 +1,4 @@
+/* Global reset and existing styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +12,7 @@ body {
     background-color: #f9f9f9;
 }
 
+/* Navbar styles */
 .navbar {
     position: sticky;
     top: 0;
@@ -23,6 +25,14 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Logo styling in navbar */
+.navbar img.logo {
+    width: 120px; /* Adjust this as needed */
+    height: auto;
+    margin-right: 20px; /* Space between logo and navigation links */
+}
+
+/* Navbar text styles */
 .navbar-logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -42,6 +52,7 @@ body {
     color: #0077B6;
 }
 
+/* Hero section and other styles */
 .hero {
     height: 80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(Background.jpg) no-repeat center center/cover;
@@ -133,6 +144,7 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Mobile responsiveness */
 @media (max-width: 768px) {
     .cards {
         flex-direction: column;
