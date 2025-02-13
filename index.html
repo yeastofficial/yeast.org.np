@@ -1,125 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YEAST - Youth for Environment And Social Transformation</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-        /* General Layout */
-        header {
-            background-color: #00FFFF;
-            padding: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        header h1 {
-            font-size: 36px;
-            margin: 0;
-            padding-left: 10px;
-        }
-        .logo-container img {
-            width: 50px; /* Adjust the size of the logo */
-            height: auto;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Navigation Bar</title>
+  <style>
+    /* Reset styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
 
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
+    /* Sticky Navbar */
+    .navbar {
+      position: sticky; /* Makes the navbar sticky */
+      top: 0; /* Navbar sticks to the top of the page */
+      z-index: 1000; /* Keeps it above other content */
+      background-color: #00FFFF; /* Your brand color */
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    }
 
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
+    .navbar a {
+      text-decoration: none;
+      color: #000; /* Text color */
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
 
-        /* Image Section between Navigation and About Us */
-        .image-section {
-            width: 100%;
-            height: 400px;
-            background-image: url('Background.jpg'); /* Replace with your image filename */
-            background-size: cover;
-            background-position: center;
-            color: white;
-            text-align: center;
-            padding: 100px 20px;
-        }
+    .navbar a:hover {
+      color: #0077B6; /* Change color on hover */
+    }
 
-        .image-section h2 {
-            font-size: 40px;
-            margin: 0;
-        }
+    .navbar-logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
 
-        .image-section p {
-            font-size: 18px;
-        }
-
-        /* About Us Section */
-        section {
-            padding: 40px;
-            text-align: center;
-        }
-
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer p {
-            margin: 0;
-        }
-
-        /* Section Titles */
-        h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            text-decoration: underline;
-        }
-
-        .team-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .team-member {
-            text-align: center;
-            width: 150px;
-        }
-
-        .team-member img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-        }
-
-        .team-member p {
-            margin-top: 10px;
-            font-weight: bold;
-        }
-
-    </style>
+    /* Add some content to scroll */
+    .content {
+      padding: 2rem;
+      height: 2000px; /* For demo purposes */
+    }
+  </style>
 </head>
 <body>
+  <header class="navbar">
+    <div class="navbar-logo">YEAST</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About Us</a>
+      <a href="#projects">Projects</a>
+      <a href="#team">Team</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="content">
+    <h1>Welcome to YEAST</h1>
+    <p>Scroll down to see the sticky navbar in action!</p>
+  </div>
+</body>
+</html>
+
 
 <!-- Header Section with Logo and Organizational Name -->
 <header>
