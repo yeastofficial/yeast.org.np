@@ -10,7 +10,7 @@ body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #f0f4f8; /* Soft light gray for background */
 }
 
 /* Title Bar */
@@ -18,11 +18,11 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: #00FFFF; /* Brand color */
+    background-color: #008080; /* Teal color */
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    font-size: 24px;
+    padding: 12px 0;
+    font-size: 26px;
     font-weight: bold;
     z-index: 1000;
     display: flex;
@@ -33,13 +33,13 @@ body {
 .title img {
     position: absolute;
     left: 20px;
-    height: 40px; /* Adjust logo size */
+    height: 40px;
 }
 
 /* Navigation Bar */
 .navbar {
     position: fixed;
-    top: 50px; /* Place below the title */
+    top: 60px; /* Adjusted to place below the title */
     width: 100%;
     background-color: #333;
     overflow: hidden;
@@ -57,18 +57,19 @@ body {
 }
 
 .navbar a:hover {
-    background-color: #575757;
+    background-color: #555;
 }
 
 /* Meet Our Team Section */
 #team {
     text-align: center;
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 #team h2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
+    color: #008080; /* Teal Color */
 }
 
 .meet-our-team, .advisor, .executive-board {
@@ -76,35 +77,40 @@ body {
 }
 
 .meet-our-team {
-    background-color: #003366; /* Dark Blue */
+    background-color: #007B7F; /* Slightly darker teal */
     color: white;
     padding: 30px;
+    border-radius: 8px;
 }
 
 .advisor {
-    background-color: #ADD8E6; /* Light Blue */
-    color: black;
+    background-color: #B0E0E6; /* Powder Blue */
+    color: #333;
     padding: 30px;
+    border-radius: 8px;
 }
 
 .executive-board {
-    background-color: #6A0DAD; /* Brinjal (Deep Purple) */
+    background-color: #8A2BE2; /* Blue Violet */
     color: white;
     padding: 30px;
+    border-radius: 8px;
 }
 
 /* Content Section */
 .content {
     padding: 20px;
-    margin-top: 100px; /* Additional spacing for fixed elements */
+    margin-top: 120px; /* Added space for fixed elements */
 }
 
 .content h1 {
     margin-bottom: 1rem;
+    color: #333;
 }
 
 .content p {
     line-height: 1.6;
+    color: #555;
 }
 
 /* Footer Styling */
@@ -116,7 +122,7 @@ footer {
 }
 
 footer a {
-    color: #00FFFF;
+    color: #00FFFF; /* Bright Cyan */
     text-decoration: none;
 }
 
@@ -144,10 +150,15 @@ footer a:hover {
     flex: 1 1 calc(33.333% - 20px);
     margin-bottom: 20px;
     box-sizing: border-box;
+    border: 1px solid #ccc; /* Light gray border for items */
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
 }
 
 #projects .project-container .project-item p {
     text-align: justify;
+    color: #666;
 }
 
 /* Adjust for mobile view (for smaller screens) */
