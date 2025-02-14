@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,38 +20,56 @@
             background-color: #f9f9f9;
         }
 
-        .navbar {
-            position: sticky;
+        /* Title Bar */
+        .title {
+            position: fixed;
             top: 0;
+            width: 100%;
+            background-color: #00FFFF; /* Brand color */
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 24px;
+            font-weight: bold;
             z-index: 1000;
-            background-color: #00FFFF;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 1rem 2rem;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            justify-content: center;
         }
 
-        .navbar-logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #000;
+        .title img {
+            position: absolute;
+            left: 20px;
+            height: 40px; /* Adjust logo size */
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 50px; /* Place below the title */
+            width: 100%;
+            background-color: #333;
+            overflow: hidden;
+            z-index: 999;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
             text-decoration: none;
-        }
-
-        .navbar nav a {
-            margin: 0 1rem;
-            text-decoration: none;
-            color: #000;
             font-weight: bold;
-            transition: color 0.3s;
         }
 
-        .navbar nav a:hover {
-            color: #0077B6;
+        .navbar a:hover {
+            background-color: #575757;
         }
 
+        /* Hero Section */
         .hero {
+            margin-top: 100px; /* Space for fixed elements */
             height: 80vh;
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Background.jpg') no-repeat center center/cover;
             display: flex;
@@ -72,107 +89,45 @@
             font-size: 1.2rem;
         }
 
-        section {
-            padding: 60px 20px;
-            text-align: center;
+        /* Content Section */
+        .content {
+            padding: 20px;
+            margin-top: 100px; /* Additional spacing for fixed elements */
         }
 
-        section h2 {
-            font-size: 2.5rem;
+        .content h1 {
             margin-bottom: 1rem;
-            color: #005f5f;
         }
 
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-
-        .card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 300px;
-            transition: transform 0.3s;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-        }
-
-        .card img {
-            width: 100%;
-            height: auto;
-        }
-
-        .card-content {
-            padding: 20px;
-        }
-
-        .card-content h3 {
-            font-size: 1.5rem;
-            margin-bottom: 10px;
-        }
-
-        .advisor-card {
-            background-color: #FF69B4;
-            color: white;
-        }
-
-        .executive-card {
-            background-color: #87CEEB;
-            color: black;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-
-        footer a {
-            color: #00FFFF;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
+        .content p {
+            line-height: 1.6;
         }
 
         @media (max-width: 768px) {
-            .cards {
-                flex-direction: column;
-                align-items: center;
-            }
-
             .navbar {
                 flex-direction: column;
                 align-items: flex-start;
             }
 
-            .navbar nav a {
+            .navbar a {
                 margin: 0.5rem 0;
             }
         }
     </style>
 </head>
-
 <body>
-    <header>
-        <div class="navbar">
-            <a href="#" class="navbar-logo">Youth for Environment And Social Transformation (YEAST)</a>
-            <nav>
-                <a href="#about">About Us</a>
-                <a href="#projects">Projects</a>
-                <a href="#team">Team</a>
-                <a href="#contact">Contact</a>
-                <a href="#news">News</a>
-            </nav>
-        </div>
+    <div class="title">
+        <img src="Untitled-2.png" alt="YEAST Logo"> <!-- Replace 'logo.png' with the path to your logo -->
+        YEAST - Youth for Environment And Social Transformation
+    </div>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </div>
+
     </header>
     </section>
     <section class="hero">
