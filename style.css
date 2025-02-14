@@ -60,61 +60,37 @@ body {
     background-color: #575757;
 }
 
-/* Hero Section */
-.hero {
-    margin-top: 100px; /* Space for fixed elements */
-    height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Background.jpg') no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* Meet Our Team Section */
+#team {
     text-align: center;
-    color: #fff;
+    padding: 50px 0;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+#team h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-.hero p {
-    font-size: 1.2rem;
+.meet-our-team, .advisor, .executive-board {
+    margin-bottom: 30px;
 }
 
-/* Latest News Section */
-.latest-news {
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: -50px 20px 20px; /* Negative margin to overlap hero section */
-    border-radius: 8px;
+.meet-our-team {
+    background-color: #003366; /* Dark Blue */
+    color: white;
+    padding: 30px;
 }
 
-.latest-news h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #00FFFF; /* Brand color */
+.advisor {
+    background-color: #ADD8E6; /* Light Blue */
+    color: black;
+    padding: 30px;
 }
 
-.latest-news ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.latest-news ul li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-.latest-news ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.latest-news ul li a:hover {
-    text-decoration: underline;
-    color: #00FFFF; /* Brand color */
+.executive-board {
+    background-color: #6A0DAD; /* Brinjal (Deep Purple) */
+    color: white;
+    padding: 30px;
 }
 
 /* Content Section */
@@ -129,52 +105,6 @@ body {
 
 .content p {
     line-height: 1.6;
-}
-
-/* Cards Section Styling */
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-.card-content {
-    padding: 20px;
-}
-
-.card-content h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-}
-
-/* Specific Card Styles */
-.advisor-card {
-    background-color: #FF69B4;
-    color: white;
-}
-
-.executive-card {
-    background-color: #87CEEB;
-    color: black;
 }
 
 /* Footer Styling */
@@ -222,11 +152,6 @@ footer a:hover {
 
 /* Adjust for mobile view (for smaller screens) */
 @media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .navbar {
         flex-direction: column;
         align-items: flex-start;
