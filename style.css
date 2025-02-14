@@ -1,283 +1,229 @@
-/* Resetting margin, padding, and box-sizing */
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Global Body Styles */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Times New Roman', serif;
+    background-color: #FFFFFF;
+    color: #000000;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
 }
 
-/* Title Bar */
-.title {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #00c8ff; /* Brand color */
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    font-size: 24px;
+h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
-    z-index: 1000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.title img {
-    position: absolute;
-    left: 20px;
-    height: 40px; /* Adjust logo size */
-}
-
-/* Navigation Bar */
-.navbar {
-    position: fixed;
-    top: 50px; /* Place below the title */
-    width: 100%;
-    background-color: #333;
-    overflow: hidden;
-    z-index: 999;
-    display: flex;
-    justify-content: space-around;
-}
-
-.navbar a {
-    color: #fff;
-    text-align: center;
-    padding: 14px 20px;
+a {
     text-decoration: none;
-    font-weight: bold;
+    color: inherit;
 }
 
-.navbar a:hover {
-    background-color: #575757;
+img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* Hero Section */
-.hero {
-    margin-top: 100px; /* Space for fixed elements */
-    height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Background.jpg') no-repeat center center/cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: justify;
-    color: #fff;
+/* Header Styles */
+header {
+    background-color: #00FFFF;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+header h1 {
+    font-size: 2.5rem;
 }
 
-.hero p {
+header nav {
+    margin-top: 10px;
+}
+
+header nav a {
+    margin: 0 15px;
     font-size: 1.2rem;
+    color: #000000;
+}
+
+/* Home Section */
+.home-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.home-section h2 {
+    font-size: 2rem;
+    color: #00FFFF;
+}
+
+.home-section p {
+    font-size: 1.1rem;
+    margin-top: 20px;
 }
 
 /* Latest News Section */
 .latest-news {
-    background-color: #ffffff;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin: -50px 20px 20px; /* Negative margin to overlap hero section */
-    border-radius: 8px;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
 }
 
 .latest-news h2 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-    color: #00008B; /* Brand color */
+    text-align: center;
+    font-size: 2rem;
+    color: #00FFFF;
 }
 
-.latest-news ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.latest-news ul li {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-}
-
-.latest-news ul li a {
-    text-decoration: none;
-    color: #333;
-}
-
-.latest-news ul li a:hover {
-    text-decoration: underline;
-    color: #00008B; /* Brand color */
-}
-
-/* Content Section */
-.content {
-    padding: 20px;
-    margin-top: 100px; /* Additional spacing for fixed elements */
-}
-
-.content h1 {
-    margin-bottom: 1rem;
-}
-
-.content p {
-    line-height: 1.6;
-}
-
-/* Cards Section Styling */
-.cards {
+.latest-news .news-item {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
 }
 
-.card {
-    background-color: #fff;
+.latest-news .news-item img {
+    width: 200px;
+    height: 200px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-}
-
-/* Ensuring all images have a 1:1 aspect ratio */
-.card img {
-    width: 100%;
-    height: 200px; /* Fixed height for uniformity */
-    object-fit: cover;
-}
-
-/* Card Content Styling */
-.card-content {
-    padding: 20px;
-}
-
-.card-content h3 {
-    font-size: 1.5rem;
     margin-bottom: 10px;
 }
 
-/* Specific Card Styles */
-.advisor-card {
-    background-color: #FF69B4;
-    color: white;
+.latest-news .news-item h3 {
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 10px;
 }
 
-.executive-card {
-    background-color: #87CEEB;
-    color: black;
+.latest-news .news-item p {
+    font-size: 1rem;
+    text-align: center;
 }
 
-.latest-news img {
-    width: 100%;
-    height: 200px; /* Same size for news photos */
-    object-fit: cover; /* Maintain aspect ratio */
+.latest-news .news-item a {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #00FFFF;
+    font-weight: bold;
 }
 
-/* Footer Styling */
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    background-color: #FFFFFF;
+}
+
+.about-us h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #00FFFF;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+/* Footer Styles */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #00FFFF;
+    color: #000000;
     text-align: center;
     padding: 20px;
 }
 
-footer a {
-    color: #00FFFF;
-    text-decoration: none;
+footer p {
+    font-size: 1rem;
 }
 
-footer a:hover {
-    text-decoration: underline;
-}
-
-/* Projects Section Styling */
-#projects {
-    width: 100%;
+/* Form Styles */
+form {
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    box-sizing: border-box;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#projects .project-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
-#projects .project-container .project-item {
-    flex: 1 1 calc(33.333% - 20px);
-    margin-bottom: 20px;
-    box-sizing: border-box;
-}
-
-#projects .project-container .project-item p {
-    text-align: justify;
-}
-
-/* Adjust for mobile view (for smaller screens) */
-@media (max-width: 768px) {
-    .cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar a {
-        margin: 0.5rem 0;
-    }
-
-    #projects .project-container .project-item {
-        flex: 1 1 100%;
-    }
-}
-
-body.light-mode {
-    background-color: #ffffff;
-    color: #000000;
-}
-
-body.dark-mode {
-    background-color: #121212;
-    color: #ffffff;
-}
-.pdf-link {
-    display: inline-block;
+form input[type="submit"] {
     background-color: #00FFFF;
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s;
+    color: #000000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
 }
 
-.pdf-link:hover {
+form input[type="submit"]:hover {
     background-color: #009999;
 }
 
-body.dark-mode #projects .project-container .project-item p {
-    color: #e0e0e0;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header nav {
+        display: block;
+        margin-top: 20px;
+    }
+
+    header nav a {
+        margin: 10px 0;
+    }
+
+    .home-section {
+        padding: 30px 20px;
+    }
+
+    .latest-news .news-item {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .latest-news .news-item img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .about-us {
+        padding: 30px 20px;
+    }
+}
+
+/* Dark Theme (Optional) */
+.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-theme header {
+    background-color: #1a1a1a;
+}
+
+.dark-theme .home-section {
+    background-color: #1a1a1a;
+}
+
+.dark-theme .latest-news {
+    background-color: #333333;
+}
+
+.dark-theme .about-us {
+    background-color: #1a1a1a;
+}
+
+.dark-theme footer {
+    background-color: #1a1a1a;
 }
