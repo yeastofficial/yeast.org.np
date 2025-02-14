@@ -3,31 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Youth for Environment And Social Transformation (YEAST) - Bridging the gap between rural, environmental, and social education in Nepal.">
-    <meta name="keywords" content="YEAST, Nepal, Environment, Youth Empowerment, Education, Agriculture">
-    <title>Youth for Environment And Social Transformation (YEAST)</title>
+    <meta name="description" content="Youth for Environment And Social Transformation (YEAST) - Empowering youth for environmental and social transformation in Nepal.">
+    <meta name="keywords" content="YEAST, Nepal, Environment, Youth Empowerment, Education, Agriculture, Sustainable Farming, Social Development">
+    <title>YEAST - Youth for Environment And Social Transformation</title>
     <style>
-        /* Resetting margin, padding, and box-sizing */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
-        /* Global Body Styles */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Times New Roman', serif; /* Using 'Times New Roman' for better consistency */
             line-height: 1.6;
             color: #333;
             background-color: #f9f9f9;
         }
 
-        /* Title Bar */
         .title {
             position: fixed;
             top: 0;
             width: 100%;
-            background-color: #00FFFF; /* Brand color */
+            background-color: #00FFFF;
             color: #fff;
             text-align: center;
             padding: 10px 0;
@@ -42,13 +39,12 @@
         .title img {
             position: absolute;
             left: 20px;
-            height: 40px; /* Adjust logo size */
+            height: 40px;
         }
 
-        /* Navigation Bar */
         .navbar {
             position: fixed;
-            top: 50px; /* Place below the title */
+            top: 50px;
             width: 100%;
             background-color: #333;
             overflow: hidden;
@@ -59,7 +55,6 @@
 
         .navbar a {
             color: #fff;
-            text-align: center;
             padding: 14px 20px;
             text-decoration: none;
             font-weight: bold;
@@ -69,16 +64,14 @@
             background-color: #575757;
         }
 
-        /* Hero Section */
         .hero {
-            margin-top: 100px; /* Space for fixed elements */
+            margin-top: 100px;
             height: 80vh;
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Background.jpg') no-repeat center center/cover;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            text-align: center;
             color: #fff;
         }
 
@@ -91,19 +84,18 @@
             font-size: 1.2rem;
         }
 
-        /* Latest News Section */
         .latest-news {
             background-color: #ffffff;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin: -50px 20px 20px; /* Negative margin to overlap hero section */
+            margin: -50px 20px 20px;
             border-radius: 8px;
         }
 
         .latest-news h2 {
             font-size: 1.8rem;
             margin-bottom: 10px;
-            color: #00FFFF; /* Brand color */
+            color: #00FFFF;
         }
 
         .latest-news ul {
@@ -113,7 +105,6 @@
 
         .latest-news ul li {
             margin-bottom: 10px;
-            font-size: 1.1rem;
         }
 
         .latest-news ul li a {
@@ -122,25 +113,9 @@
         }
 
         .latest-news ul li a:hover {
-            text-decoration: underline;
-            color: #00FFFF; /* Brand color */
+            color: #00FFFF;
         }
 
-        /* Content Section */
-        .content {
-            padding: 20px;
-            margin-top: 100px; /* Additional spacing for fixed elements */
-        }
-
-        .content h1 {
-            margin-bottom: 1rem;
-        }
-
-        .content p {
-            line-height: 1.6;
-        }
-
-        /* Cards Section Styling */
         .cards {
             display: flex;
             flex-wrap: wrap;
@@ -172,21 +147,8 @@
 
         .card-content h3 {
             font-size: 1.5rem;
-            margin-bottom: 10px;
         }
 
-        /* Specific Card Styles */
-        .advisor-card {
-            background-color: #FF69B4;
-            color: white;
-        }
-
-        .executive-card {
-            background-color: #87CEEB;
-            color: black;
-        }
-
-        /* Footer Styling */
         footer {
             background-color: #333;
             color: #fff;
@@ -203,89 +165,39 @@
             text-decoration: underline;
         }
 
-        /* Projects Section Styling */
-        #projects {
-            width: 100%;
-            margin: 0 auto;
-            padding: 20px;
-            box-sizing: border-box;
-        }
-
-        /* Justified content and full width */
-        #projects .project-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        #projects .project-container .project-item {
-            flex: 1 1 calc(33.333% - 20px);
-            margin-bottom: 20px;
-            box-sizing: border-box;
-        }
-
-        #projects .project-container .project-item p {
-            text-align: justify;
-        }
-
-        /* Adjust for mobile view (for smaller screens) */
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .cards {
-                flex-direction: column;
-                align-items: center;
-            }
-
             .navbar {
                 flex-direction: column;
                 align-items: flex-start;
             }
 
-            .navbar a {
-                margin: 0.5rem 0;
+            .cards {
+                flex-direction: column;
             }
 
-            /* Projects Section Responsive Layout */
-            #projects .project-container .project-item {
-                flex: 1 1 100%;
+            .card {
+                width: 100%;
+                margin-bottom: 20px;
             }
-        }
-
-        /* Light mode background color */
-        body.light-mode {
-            background-color: #ffffff;
-            color: #000000;
-        }
-
-        /* Dark mode background color */
-        body.dark-mode {
-            background-color: #121212;
-            color: #ffffff;
-        }
-
-        /* Apply dark mode-specific styles for text in the project section */
-        body.dark-mode #projects .project-container .project-item p {
-            color: #e0e0e0;
         }
     </style>
 </head>
 <body>
     <div class="title">
-        <img src="Untitled-2.png" alt="YEAST Logo"> <!-- Replace 'logo.png' with the path to your logo -->
+        <img src="Untitled-2.png" alt="YEAST Logo">
         Youth for Environment And Social Transformation (YEAST)
     </div>
 
-<div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#latest-news">Latest News</a> 
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#team">Our Team</a>
-    <a href="#photo-gallery">Photo Gallery</a>
-    <a href="#contact">Contact</a>
-    
-</div>
-
+    <div class="navbar">
+        <a href="#home" aria-label="Go to Home Section">Home</a>
+        <a href="#latest-news" aria-label="View Latest News">Latest News</a>
+        <a href="#about" aria-label="Learn About Us">About</a>
+        <a href="#projects" aria-label="Explore Our Projects">Projects</a>
+        <a href="#team" aria-label="Meet Our Team">Our Team</a>
+        <a href="#photo-gallery" aria-label="Visit Our Photo Gallery">Photo Gallery</a>
+        <a href="#contact" aria-label="Contact Us">Contact</a>
+    </div>
     <div class="hero">
         <h1>Welcome to YEAST</h1>
         <p>Bridging the gap between rural, environmental, and social education in Nepal.</p>
