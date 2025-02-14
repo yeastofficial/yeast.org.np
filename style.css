@@ -150,6 +150,24 @@ body {
     color: #3498db; /* Primary color */
 }
 
+/* Photo Gallery Section */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 200px;  /* Adjusted height for a consistent look */
+    object-fit: cover;  /* Ensures images cover the area without distortion */
+    aspect-ratio: 1 / 2;  /* Forces the 1:2 aspect ratio */
+    border-radius: 8px;  /* Optional: add rounded corners */
+    margin-bottom: 10px;
+}
+
 /* Footer */
 footer {
     background-color: #34495e; /* Dark gray-blue */
@@ -165,6 +183,49 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Desktop and Laptop View (PC View) */
+@media (min-width: 769px) {
+    /* Adjust title bar and navigation for larger screens */
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar a {
+        padding: 20px;
+        font-size: 1.1rem;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    /* Cards to be aligned horizontally with spacing */
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card {
+        width: 30%;  /* Three cards per row */
+    }
+
+    .card-content {
+        padding: 25px;
+    }
+
+    /* Gallery images should maintain the 1:2 aspect ratio */
+    .gallery img {
+        width: 48%;
+        height: 300px; /* Adjust height for PC view */
+    }
 }
 
 /* Responsive Design */
@@ -202,6 +263,12 @@ footer a:hover {
 
     .card-content {
         padding: 15px;
+    }
+
+    /* Adjust gallery images for mobile */
+    .gallery img {
+        height: 150px;  /* Adjust height for smaller screens */
+        width: 100%; /* Full width for smaller screens */
     }
 }
 
