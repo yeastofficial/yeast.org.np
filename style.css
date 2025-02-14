@@ -172,7 +172,42 @@ form input[type="submit"]:hover {
     background-color: #009999;
 }
 
-/* Responsive Styles */
+/* PC Mode Styles (Desktop) */
+@media (min-width: 1024px) {
+    .home-section h2 {
+        font-size: 3rem;
+    }
+
+    .latest-news h2 {
+        font-size: 2.5rem;
+    }
+
+    .latest-news .news-item {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .latest-news .news-item img {
+        width: 250px;
+        height: 250px;
+        margin-right: 20px;
+    }
+
+    .about-us h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-us p {
+        font-size: 1.2rem;
+    }
+
+    form {
+        max-width: 700px;
+    }
+}
+
+/* Mobile Mode Styles (Tablet & Smaller Screens) */
 @media (max-width: 768px) {
     header nav {
         display: block;
@@ -181,24 +216,47 @@ form input[type="submit"]:hover {
 
     header nav a {
         margin: 10px 0;
+        font-size: 1.1rem;
     }
 
     .home-section {
         padding: 30px 20px;
     }
 
+    .home-section h2 {
+        font-size: 2.5rem;
+    }
+
     .latest-news .news-item {
-        flex-direction: row;
-        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 40px;
     }
 
     .latest-news .news-item img {
         width: 150px;
         height: 150px;
+        margin-bottom: 10px;
+    }
+
+    .latest-news .news-item h3 {
+        font-size: 1.3rem;
     }
 
     .about-us {
         padding: 30px 20px;
+    }
+
+    .about-us h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-us p {
+        font-size: 1rem;
+    }
+
+    form {
+        max-width: 100%;
+        padding: 15px;
     }
 }
 
