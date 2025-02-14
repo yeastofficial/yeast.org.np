@@ -263,6 +263,20 @@ body.dark-mode {
     background-color: #121212;
     color: #ffffff;
 }
+.pdf-link {
+    display: inline-block;
+    background-color: #00FFFF;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.pdf-link:hover {
+    background-color: #009999;
+}
 
 body.dark-mode #projects .project-container .project-item p {
     color: #e0e0e0;
