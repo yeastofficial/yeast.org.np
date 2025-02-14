@@ -164,6 +164,54 @@ header nav a {
     margin-top: 20px;
 }
 
+/* Photo Gallery Section */
+.photo-gallery {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.photo-gallery h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #00FFFF;
+    margin-bottom: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-direction: column;
+    animation: slideLeft 15s linear infinite;
+}
+
+.gallery-item {
+    margin-bottom: 20px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Sliding Animation */
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    25% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-100%);
+    }
+    75% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(-300%);
+    }
+}
+
 /* Footer Styles */
 footer {
     background-color: #00FFFF;
