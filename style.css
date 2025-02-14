@@ -161,6 +161,48 @@ footer a:hover {
     color: #666;
 }
 
+/* Gallery Grid Layout */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item .caption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover Effect */
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover .caption {
+    visibility: visible;
+    opacity: 1;
+}
+
 /* Adjust for mobile view (for smaller screens) */
 @media (max-width: 768px) {
     .navbar {
@@ -175,6 +217,11 @@ footer a:hover {
     /* Projects Section Responsive Layout */
     #projects .project-container .project-item {
         flex: 1 1 100%;
+    }
+
+    /* Gallery Layout for smaller screens */
+    .gallery {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
