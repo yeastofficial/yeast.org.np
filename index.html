@@ -7,12 +7,14 @@
     <meta name="keywords" content="YEAST, Nepal, Environment, Youth Empowerment, Education, Agriculture">
     <title>YEAST - Youth for Environment And Social Transformation</title>
     <style>
+        /* Resetting margin, padding, and box-sizing */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        /* Global Body Styles */
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
@@ -89,6 +91,41 @@
             font-size: 1.2rem;
         }
 
+        /* Latest News Section */
+        .latest-news {
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin: -50px 20px 20px; /* Negative margin to overlap hero section */
+            border-radius: 8px;
+        }
+
+        .latest-news h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #00FFFF; /* Brand color */
+        }
+
+        .latest-news ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .latest-news ul li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+
+        .latest-news ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .latest-news ul li a:hover {
+            text-decoration: underline;
+            color: #00FFFF; /* Brand color */
+        }
+
         /* Content Section */
         .content {
             padding: 20px;
@@ -103,7 +140,102 @@
             line-height: 1.6;
         }
 
+        /* Cards Section Styling */
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        /* Specific Card Styles */
+        .advisor-card {
+            background-color: #FF69B4;
+            color: white;
+        }
+
+        .executive-card {
+            background-color: #87CEEB;
+            color: black;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #00FFFF;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Projects Section Styling */
+        #projects {
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Justified content and full width */
+        #projects .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        #projects .project-container .project-item {
+            flex: 1 1 calc(33.333% - 20px);
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        #projects .project-container .project-item p {
+            text-align: justify;
+        }
+
+        /* Adjust for mobile view (for smaller screens) */
         @media (max-width: 768px) {
+            .cards {
+                flex-direction: column;
+                align-items: center;
+            }
+
             .navbar {
                 flex-direction: column;
                 align-items: flex-start;
@@ -112,6 +244,28 @@
             .navbar a {
                 margin: 0.5rem 0;
             }
+
+            /* Projects Section Responsive Layout */
+            #projects .project-container .project-item {
+                flex: 1 1 100%;
+            }
+        }
+
+        /* Light mode background color */
+        body.light-mode {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        /* Dark mode background color */
+        body.dark-mode {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        /* Apply dark mode-specific styles for text in the project section */
+        body.dark-mode #projects .project-container .project-item p {
+            color: #e0e0e0;
         }
     </style>
 </head>
@@ -121,20 +275,35 @@
         YEAST - Youth for Environment And Social Transformation
     </div>
 
-    <div class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#team">Team</a>
-        <a href="#contact">Contact Us</a>
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#latest-news">Latest News</a> 
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Our Team</a>
+    <a href="#contact">Contact</a>
+    
+</div>
+
+    <div class="hero">
+        <h1>Welcome to YEAST</h1>
+        <p>Bridging the gap between rural, environmental, and social education in Nepal.</p>
     </div>
 
-    </header>
-    </section>
-    <section class="hero">
-        <h1>Welcome to YEAST</h1>
-        <p>Empowering youth for environmental and social transformation</p>
-    </section>
+    <div class="latest-news">
+        <h2>Latest News</h2>
+        <ul>
+            <li>
+                <img src="Untitled-2.png" alt="News 1" class="news-image">
+                <a href="#">YEAST call for an article.</a>
+            </li>
+            <li>
+                <img src="Untitled-2.png" alt="News 2" class="news-image">
+                <a href="#">Upcoming workshop on sustainable agriculture practices</a>
+            </li>
+            <li>
+                <img src="Untitled-2.png" alt="News 2" class="news-image">
+                <a href="#">Upcoming workshop on sustainable agriculture practices</a>
 
     <section id="about">
         <h2>About Us</h2>
