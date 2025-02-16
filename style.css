@@ -152,41 +152,58 @@ body {
 
 /* Photo Gallery Section */
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    display: flex;
+    flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
     padding: 20px;
 }
 
 .gallery-item {
-    background-color: #fff; /* White background for photo boxes */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.3s;
-}
-
-.gallery-item:hover {
-    transform: translateY(-5px); /* Hover effect */
+    width: 20%; /* Each photo box takes 20% of the container's width */
+    text-align: center; /* Center-align caption */
 }
 
 .gallery img {
-    width: 100%;
-    height: 150px; /* Fixed height for rectangular frame */
-    object-fit: cover; /* Ensures the image fills the frame without distortion */
-    border-radius: 8px; /* Match the box's rounded corners */
+    width: 100%; /* Fully fills the gallery-item box */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image fits the frame without distortion */
+    border-radius: 8px; /* Rounded corners for aesthetic design */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
 }
 
 .gallery-caption {
-    margin-top: 10px;
-    font-size: 14px;
-    color: #333; /* Dark text for contrast */
-    font-family: 'Times New Roman', serif; /* Matching overall font */
+    margin-top: 8px; /* Spacing between image and caption */
+    font-size: 14px; /* Caption text size */
+    color: #34495e; /* Caption text color */
+}
+
+/* Responsive Design for Gallery */
+@media (min-width: 769px) {
+    .gallery-item {
+        width: 20%; /* 4-5 photo boxes per row on larger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 30%; /* Larger photo boxes for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 45%; /* Two photos per row for small mobile screens */
+    }
+
+    .gallery-caption {
+        font-size: 12px; /* Smaller caption text for mobile */
+    }
 }
 
 /* Footer */
