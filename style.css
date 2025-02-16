@@ -150,59 +150,65 @@ body {
     color: #3498db; /* Primary color */
 }
 
-/* Photo Gallery Section */
-.gallery {
+/* Team Photo Section */
+.team-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
+    justify-content: center; /* Aligns all photo frames in the center */
+    gap: 10px; /* Space between photo frames */
     padding: 20px;
 }
 
-.gallery-item {
-    width: 20%; /* Each photo box takes 20% of the container's width */
-    text-align: center; /* Center-align caption */
+.team-gallery-item {
+    width: 12%; /* Each photo frame takes approximately 12% of the row for 7 frames */
+    text-align: center;
 }
 
-.gallery img {
-    width: 100%; /* Fully fills the gallery-item box */
+.team-gallery img {
+    width: 100%; /* Fully fills the photo frame */
     height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensures the image fits the frame without distortion */
-    border-radius: 8px; /* Rounded corners for aesthetic design */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    object-fit: cover; /* Ensures image fits without distortion */
+    border-radius: 8px; /* Rounded corners for photo frame */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
     transition: transform 0.3s ease; /* Hover effect */
 }
 
-.gallery img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+.team-gallery img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
 }
 
-.gallery-caption {
-    margin-top: 8px; /* Spacing between image and caption */
-    font-size: 14px; /* Caption text size */
-    color: #34495e; /* Caption text color */
+.team-gallery-caption {
+    margin-top: 5px; /* Space between image and caption */
+    font-size: 12px; /* Small text for caption */
+    color: #34495e; /* Neutral text color */
 }
 
-/* Responsive Design for Gallery */
-@media (min-width: 769px) {
-    .gallery-item {
-        width: 20%; /* 4-5 photo boxes per row on larger screens */
+/* Responsive Design for Team Gallery */
+@media (min-width: 1024px) {
+    .team-gallery-item {
+        width: 12%; /* 7 photo frames per row on large screens */
+    }
+}
+
+@media (max-width: 1024px) {
+    .team-gallery-item {
+        width: 14%; /* 6-7 photo frames per row on medium screens */
     }
 }
 
 @media (max-width: 768px) {
-    .gallery-item {
-        width: 30%; /* Larger photo boxes for tablets */
+    .team-gallery-item {
+        width: 20%; /* 5 photo frames per row on tablets */
     }
 }
 
 @media (max-width: 480px) {
-    .gallery-item {
-        width: 45%; /* Two photos per row for small mobile screens */
+    .team-gallery-item {
+        width: 30%; /* 3 photo frames per row on small mobile devices */
     }
 
-    .gallery-caption {
-        font-size: 12px; /* Smaller caption text for mobile */
+    .team-gallery-caption {
+        font-size: 10px; /* Smaller caption for mobile screens */
     }
 }
 
