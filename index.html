@@ -1,13 +1,10 @@
-<head> 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Youth for Environment And Social Transformation (YEAST) - Empowering youth for environmental and social transformation in Nepal.">
     <meta name="keywords" content="YEAST, Nepal, Environment, Youth Empowerment, Education, Agriculture, Sustainable Farming, Social Development">
     <title>YEAST - Youth for Environment And Social Transformation</title>
-    
-    <!-- Lightbox2 CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
-    
     <style>
         * {
             margin: 0;
@@ -16,174 +13,90 @@
         }
 
         body {
-            font-family: 'Times New Roman', serif; /* Using 'Times New Roman' for better consistency */
+            font-family: 'Times New Roman', serif;
             line-height: 1.6;
             color: #333;
             background-color: #f9f9f9;
         }
-
-        .title {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: #00FFFF;
-            color: #fff;
+                .team-gallery {
+            margin: 50px auto;
             text-align: center;
-            padding: 10px 0;
-            font-size: 24px;
-            font-weight: bold;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            max-width: 1200px;
         }
 
-        .title img {
-            position: absolute;
-            left: 20px;
-            height: 40px;
-        }
-
-        .navbar {
-            position: fixed;
-            top: 50px;
-            width: 100%;
-            background-color: #333;
-            overflow: hidden;
-            z-index: 999;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        .navbar a {
-            color: #fff;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .navbar a:hover {
-            background-color: #575757;
-        }
-
-        .hero {
-            margin-top: 100px;
-            height: 80vh;
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('Background.jpg') no-repeat center center/cover;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-        }
-
-        .latest-news {
-            background-color: #ffffff;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            margin: -50px 20px 20px;
-            border-radius: 8px;
-        }
-
-        .latest-news h2 {
+        .team-gallery h2 {
             font-size: 1.8rem;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             color: #00FFFF;
         }
 
-        .latest-news ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .latest-news ul li {
-            margin-bottom: 10px;
-        }
-
-        .latest-news ul li a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        .latest-news ul li a:hover {
-            color: #00FFFF;
-        }
-
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
+        .team-gallery .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+            gap: 10px;
             justify-content: center;
-            gap: 20px;
         }
 
-        .card {
-            background-color: 05a5f0;
+        .team-gallery .photo-grid a {
+            display: block;
+            width: 100%;
+            height: 80px;
+            overflow: hidden;
             border-radius: 8px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            width: 300px;
             transition: transform 0.3s;
         }
 
-        .card:hover {
-            transform: translateY(-10px);
-        }
-
-        .card img {
+        .team-gallery .photo-grid a img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
         }
 
-        .card-content {
-            padding: 20px;
+        .team-gallery .photo-grid a:hover {
+            transform: scale(1.1);
         }
 
-        .card-content h3 {
-            font-size: 1.5rem;
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
+        .photo-gallery {
+            margin: 50px auto;
             text-align: center;
-            padding: 20px;
         }
 
-        footer a {
+        .photo-gallery h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
             color: #00FFFF;
-            text-decoration: none;
         }
 
-        footer a:hover {
-            text-decoration: underline;
+        .photo-gallery .photo-row {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
         }
 
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+        .photo-gallery .photo-row a {
+            display: block;
+            width: 80px;
+            height: 80px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
 
-            .cards {
-                flex-direction: column;
-            }
+        .photo-gallery .photo-row a img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
 
-            .card {
-                width: 100%;
-                margin-bottom: 20px;
-            }
+        .photo-gallery .photo-row a:hover {
+            transform: scale(1.1);
         }
     </style>
+</head>
+<body>
 </head>
 <body>
 </head>
@@ -437,57 +350,34 @@ The exact number of dogs sterilized across all seasons and districts is almost 2
   </div>
 </section>
 
-<section id="photo-gallery">
-    <div class="gallery-title">
-        <h2>Photo Gallery</h2>
-        <p>Explore our journey through these moments captured in pictures.</p>
-    </div>
-    <div class="gallery-container">
-        <!-- Gallery Item 1 -->
-        <div class="gallery-item">
-            <a href="ABC.jpg" data-lightbox="gallery" data-title="Caption for Photo 1">
-                <img src="ABC.jpg" alt="Photo 1">
+<!-- Photo Gallery Section -->
+    <section class="photo-gallery">
+        <h2>Our Memories</h2>
+        <div class="photo-row">
+            <!-- Each image links to the full-size version -->
+            <a href="photo1.jpg" data-lightbox="gallery" data-title="Photo 1">
+                <img src="photo1.jpg" alt="Photo 1">
             </a>
-            <div class="gallery-caption">Caption for Photo 1</div>
-        </div>
-        <!-- Gallery Item 2 -->
-        <div class="gallery-item">
-            <a href="AGM.jpg" data-lightbox="gallery" data-title="Caption for Photo 2">
-                <img src="AGM.jpg" alt="Photo 2">
+            <a href="photo2.jpg" data-lightbox="gallery" data-title="Photo 2">
+                <img src="photo2.jpg" alt="Photo 2">
             </a>
-            <div class="gallery-caption">Caption for Photo 2</div>
-        </div>
-        <!-- Gallery Item 3 -->
-        <div class="gallery-item">
-            <a href="Bootcamp.jpg" data-lightbox="gallery" data-title="Caption for Photo 3">
-                <img src="Bootcamp.jpg" alt="Photo 3">
+            <a href="photo3.jpg" data-lightbox="gallery" data-title="Photo 3">
+                <img src="photo3.jpg" alt="Photo 3">
             </a>
-            <div class="gallery-caption">Caption for Photo 3</div>
-        </div>
-        <!-- Gallery Item 4 -->
-        <div class="gallery-item">
-            <a href="cucumber.jpg" data-lightbox="gallery" data-title="Caption for Photo 4">
-                <img src="cucumber.jpg" alt="Photo 4">
+            <a href="photo4.jpg" data-lightbox="gallery" data-title="Photo 4">
+                <img src="photo4.jpg" alt="Photo 4">
             </a>
-            <div class="gallery-caption">Caption for Photo 4</div>
-        </div>
-        <!-- Gallery Item 5 -->
-        <div class="gallery-item">
-            <a href="mensural.jpg" data-lightbox="gallery" data-title="Caption for Photo 5">
-                <img src="mensural.jpg" alt="Photo 5">
+            <a href="photo5.jpg" data-lightbox="gallery" data-title="Photo 5">
+                <img src="photo5.jpg" alt="Photo 5">
             </a>
-            <div class="gallery-caption">Caption for Photo 5</div>
-        </div>
-        <!-- Gallery Item 6 -->
-        <div class="gallery-item">
-            <a href="mushroom.jpg" data-lightbox="gallery" data-title="Caption for Photo 6">
-                <img src="mushroom.jpg" alt="Photo 6">
+            <a href="photo6.jpg" data-lightbox="gallery" data-title="Photo 6">
+                <img src="photo6.jpg" alt="Photo 6">
             </a>
-            <div class="gallery-caption">Caption for Photo 6</div>
+            <a href="photo7.jpg" data-lightbox="gallery" data-title="Photo 7">
+                <img src="photo7.jpg" alt="Photo 7">
+            </a>
         </div>
-    </div>
-</section>
-
+    </section>
     </section>
     <section id="contact">
     <h2>Contact Us</h2>
@@ -520,8 +410,7 @@ The exact number of dogs sterilized across all seasons and districts is almost 2
         <p>&copy; 2025 Youth for Environment And Social Transformation. All rights reserved.</p>
         <p> Website Designed by: ANish Gyawali</p>
     </footer>
-<!-- Lightbox2 JS -->
+  <!-- Lightbox2 JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 </body>
-
 </html>
