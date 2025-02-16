@@ -1,243 +1,192 @@
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
 }
 
-/* Body Styles */
 body {
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Times New Roman', serif;
     line-height: 1.6;
-    font-size: 16px;
-    padding-top: 60px; /* Adjust for fixed navbar */
+    color: #333;
+    background-color: #f9f9f9;
 }
 
 /* Navbar Styles */
-nav {
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: #00FFFF;
     padding: 15px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 20px;
-}
-
-nav ul li a {
-    color: #333;
+.navbar a {
     text-decoration: none;
+    color: #333;
+    padding: 12px 20px;
     font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
-    color: #fff;
+.navbar a:hover {
+    background-color: #ccc;
 }
 
-/* Header Section */
-header {
-    background: url('path_to_your_header_image.jpg') no-repeat center center/cover;
-    height: 500px;
-    color: #fff;
+/* Hero Section */
+.hero {
+    background-color: #00FFFF;
+    color: white;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding: 80px 20px;
 }
 
-header h1 {
-    font-size: 50px;
-    font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+.hero h1 {
+    font-size: 3rem;
 }
 
-header p {
-    font-size: 20px;
-    margin-top: 20px;
+.hero p {
+    font-size: 1.5rem;
 }
 
-/* About Section */
-.about {
-    background-color: #ffffff;
-    padding: 50px 20px;
-    text-align: center;
+/* Section Styling */
+.latest-news, .about, .projects, .team, .gallery {
+    margin: 50px;
 }
 
-.about h2 {
-    font-size: 36px;
+h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #00FFFF;
 }
 
-.about p {
-    font-size: 18px;
+p {
+    font-size: 1rem;
     line-height: 1.8;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
-/* Projects Section */
-.projects {
-    background-color: #e7e7e7;
-    padding: 50px 20px;
-}
-
-.projects h2 {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 40px;
-    color: #00FFFF;
-}
-
-.project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.project-item {
-    background-color: #fff;
+/* Card Styles */
+.card {
+    border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    text-align: center;
-    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
     transition: transform 0.3s ease;
 }
 
-.project-item:hover {
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card:hover {
     transform: scale(1.05);
 }
 
-.project-item img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
+.card-content h3 {
+    font-size: 1.2rem;
 }
 
-.project-item h3 {
-    font-size: 24px;
+.card-content p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Grid Layout for Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+/* Team Section */
+.cards .card {
+    text-align: center;
+    padding: 15px;
+}
+
+.team-gallery .photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 10px;
+    justify-content: center;
+}
+
+.card img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+}
+
+/* Mobile View */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .team-gallery .photo-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Larger Screen (Desktop) Adjustments */
+@media screen and (min-width: 1200px) {
+    .hero {
+        padding: 80px;
+    }
+
+    .cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Title Styling */
+.title {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.title img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+/* Section Titles */
+h3 {
+    font-size: 1.5rem;
     margin-top: 20px;
 }
 
-.project-item p {
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-/* Contact Section */
-#contact {
-    background-color: #ffffff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#contact h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #00FFFF;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-form button {
+/* Button Styles (if you have buttons) */
+button {
     background-color: #00FFFF;
-    color: #fff;
-    padding: 10px 20px;
+    color: #333;
+    padding: 12px 20px;
     border: none;
-    border-radius: 4px;
-    font-size: 18px;
+    border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-form button:hover {
-    background-color: #009999;
-}
-
-/* Footer Section */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 30px;
-}
-
-footer p {
-    font-size: 16px;
-}
-
-/* Media Queries for Mobile and Tablet Views */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul li {
-        margin-bottom: 10px;
-    }
-
-    header h1 {
-        font-size: 40px;
-    }
-
-    header p {
-        font-size: 18px;
-    }
-
-    .about p {
-        font-size: 16px;
-    }
-
-    .project-list {
-        grid-template-columns: 1fr;
-    }
-
-    .project-item h3 {
-        font-size: 20px;
-    }
-
-    .project-item p {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        height: 400px;
-    }
-
-    header h1 {
-        font-size: 30px;
-    }
-
-    header p {
-        font-size: 16px;
-    }
+button:hover {
+    background-color: #ccc;
 }
