@@ -18,16 +18,74 @@
             color: #333;
             background-color: #f9f9f9;
         }
-                .team-gallery {
-            margin: 50px auto;
-            text-align: center;
-            max-width: 1200px;
+
+        /* General styling */
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #00FFFF;
+            padding: 10px;
         }
 
-        .team-gallery h2 {
-            font-size: 1.8rem;
+        .navbar a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            background-color: #ccc;
+        }
+
+        .hero {
+            background-color: #00FFFF;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .latest-news, .about, .projects, .team, .gallery {
+            margin: 50px;
+        }
+
+        /* Card Styles */
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
             margin-bottom: 20px;
-            color: #00FFFF;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        /* Responsive Grid */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+        }
+
+        /* Team section */
+        .cards .card {
+            text-align: center;
+            padding: 15px;
         }
 
         .team-gallery .photo-grid {
@@ -37,99 +95,95 @@
             justify-content: center;
         }
 
-        .team-gallery .photo-grid a {
-            display: block;
-            width: 100%;
-            height: 80px;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .team-gallery .photo-grid a img {
-            width: 100%;
-            height: 100%;
+        /* Gallery and team member images */
+        .card img {
+            border-radius: 50%;
             object-fit: cover;
+            width: 150px;
+            height: 150px;
         }
 
-        .team-gallery .photo-grid a:hover {
-            transform: scale(1.1);
+        .card-content h3 {
+            font-size: 1.2rem;
         }
 
-        .photo-gallery {
-            margin: 50px auto;
-            text-align: center;
+        .card-content p {
+            font-size: 1rem;
+            margin: 5px 0;
         }
 
-        .photo-gallery h2 {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            color: #00FFFF;
+        /* Mobile View */
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .team-gallery .photo-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
-        .photo-gallery .photo-row {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
+        /* Larger screen (desktop) adjustments */
+        @media screen and (min-width: 1200px) {
+            .hero {
+                padding: 80px;
+            }
+
+            .cards {
+                grid-template-columns: repeat(3, 1fr);
+            }
         }
 
-        .photo-gallery .photo-row a {
-            display: block;
-            width: 80px;
-            height: 80px;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-
-        .photo-gallery .photo-row a img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .photo-gallery .photo-row a:hover {
-            transform: scale(1.1);
-        }
     </style>
 </head>
+
 <body>
-</head>
-<body>
-</head>
-<body>
+
     <div class="title">
-        <img src="Untitled-2.png" alt="YEAST Logo">
+        <img src="Untitled-2.png" alt="YEAST Logo" style="width: 100px;">
         Youth for Environment And Social Transformation (YEAST)
     </div>
 
     <div class="navbar">
-        <a href="#title" aria-label="Go to Home Section">Home</a>
-        <a href="#latest-news" aria-label="View Latest News">Latest News</a>
-        <a href="#about" aria-label="Learn About Us">About</a>
-        <a href="#projects" aria-label="Explore Our Projects">Projects</a>
-        <a href="#team" aria-label="Meet Our Team">Our Team</a>
-        <a href="#gallery" aria-label="Visit Our Photo Gallery">Photo Gallery</a>
-        <a href="#contact" aria-label="Contact Us">Contact</a>
+        <a href="#title">Home</a>
+        <a href="#latest-news">Latest News</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#team">Our Team</a>
+        <a href="#gallery">Photo Gallery</a>
+        <a href="#contact">Contact</a>
     </div>
+
     <div class="hero">
         <h1>Welcome to YEAST</h1>
         <p>Bridging the gap between rural, environmental, and social education in Nepal.</p>
     </div>
-    <section id="latest-news">
-<div class="latest-news">
-    <h2>Latest News</h2>
-    <div class="card">
-        <img src="Article.jpg" alt="news image">
-        <div class="card-body">
-            <h3>Call for article</h3>
-            <p>Youth for Environment And Social Transformation (YEAST) is pleased to announce a call for articles to be featured in our upcoming book titled Krishi Sarathi. This book aims to showcase insightful contributions from experts, scholars, practitioners, and passionate individuals in the field of agriculture. The articles will focus on contemporary agricultural practices, innovations, and sustainable farming solutions, with the goal of educating and inspiring the farming community.</p>
-        </div>
-    </div>
 
+    <section id="latest-news">
+        <div class="latest-news">
+            <h2>Latest News</h2>
+            <div class="card">
+                <img src="Article.jpg" alt="news image">
+                <div class="card-body">
+                    <h3>Call for article</h3>
+                    <p>We are inviting contributions for the upcoming book "Krishi Sarathi," focusing on contemporary agricultural practices and sustainable farming solutions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="about">
         <h2>About Us</h2>
         <p>Youth for Environment And Social Transformation (YEAST) is a non-profit organization established on April 17, 2022, by dynamic students from various applied sciences institutions, with guidance from senior educators. YEAST is committed to enhancing character and leadership development in youth through training programs, discussions, debates, courses, and meetings, benefiting local farmers by disseminating knowledge and skills. The organization's primary goal is to bridge the gap between rural, environmental, and social education, enabling individuals to understand issues more practically and effectively at the grassroots level. Since its inception, YEAST has been actively involved in multiple sectors, including environmental conservation, social issues, education, veterinary, and agriculture. Through its work, YEAST strives to empower youth and local communities to become change-makers who lead sustainable and socially responsible lives.</p>
@@ -142,8 +196,7 @@
                 <img src="Yeast LOgo (1).png" alt="Project 1">
                 <div class="card-content">
                     <h3>Animal Birth Control</h3>
-                    <p>Youth for Environment and Social Transformation (YEAST) organization has been actively conducting Animal Birth Control (ABC) programs across various districts in Nepal, including Rupandehi, Arghakhanchi, Palpa, Dhading, and Makwanpur. These initiatives aim to control the stray dog population and promote animal welfare.
-        <div class="cards">
+                    <p>YEAST has implemented ABC programs across several districts in Nepal, sterilizing stray dogs and promoting animal welfare.</p>
             <div class="card">
 Program Overview:
 
@@ -350,35 +403,20 @@ The exact number of dogs sterilized across all seasons and districts is almost 2
   </div>
 </section>
 
-<!-- Photo Gallery Section -->
-    <section class="photo-gallery">
-        <h2>Our Memories</h2>
-        <div class="photo-row">
-            <!-- Each image links to the full-size version -->
-            <a href="photo1.jpg" data-lightbox="gallery" data-title="Photo 1">
-                <img src="photo1.jpg" alt="Photo 1">
-            </a>
-            <a href="photo2.jpg" data-lightbox="gallery" data-title="Photo 2">
-                <img src="photo2.jpg" alt="Photo 2">
-            </a>
-            <a href="photo3.jpg" data-lightbox="gallery" data-title="Photo 3">
-                <img src="photo3.jpg" alt="Photo 3">
-            </a>
-            <a href="photo4.jpg" data-lightbox="gallery" data-title="Photo 4">
-                <img src="photo4.jpg" alt="Photo 4">
-            </a>
-            <a href="photo5.jpg" data-lightbox="gallery" data-title="Photo 5">
-                <img src="photo5.jpg" alt="Photo 5">
-            </a>
-            <a href="photo6.jpg" data-lightbox="gallery" data-title="Photo 6">
-                <img src="photo6.jpg" alt="Photo 6">
-            </a>
-            <a href="photo7.jpg" data-lightbox="gallery" data-title="Photo 7">
-                <img src="photo7.jpg" alt="Photo 7">
-            </a>
-        </div>
-    </section>
-    </section>
+<section id="gallery">
+    <h2>Photo Gallery</h2>
+    <div class="photo-gallery">
+      <h3>Our Activities</h3>
+      <div class="photo-row">
+        <a href="ABC.jpg" data-lightbox="gallery"><img src="ABC.jpg" alt="Photo 1"></a>
+        <a href="AGM.jpg" data-lightbox="gallery"><img src="AGM.jpg" alt="Photo 2"></a>
+        <a href="Bootcamp.jpg" data-lightbox="gallery"><img src="Bootcamp.jpg" alt="Photo 3"></a>
+        <a href="cucumber.jpg" data-lightbox="gallery"><img src="cucumber.jpg" alt="Photo 4"></a>
+        <a href="mushroom.jpg" data-lightbox="gallery"><img src="mushroom.jpg" alt="Photo 4"></a>
+      </div>
+    </div>
+  </section>
+
     <section id="contact">
     <h2>Contact Us</h2>
     <p>Email: info@yeast.org.np  yeast2018official@gmail.com</p>
