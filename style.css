@@ -152,24 +152,41 @@ body {
 
 /* Photo Gallery Section */
 .gallery {
-    display: rectangle;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
     gap: 15px;
     justify-content: center;
     padding: 20px;
 }
 
-.gallery img {
-    width: 30px; /* Fixed width for rectangular frame */
-    height: 20px; /* Fixed height for rectangular frame */
-    object-fit: cover; /* Ensures the image fills the frame without distortion */
-    border-radius: 8px; /* Rounded corners for the images */
+.gallery-item {
+    background-color: #fff; /* White background for photo boxes */
+    border-radius: 8px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    transition: transform 0.3s ease; /* Hover effect */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s;
 }
 
-.gallery img:hover {
-    transform: scale(1.05); /* Slight zoom on hover */
+.gallery-item:hover {
+    transform: translateY(-5px); /* Hover effect */
+}
+
+.gallery img {
+    width: 100%;
+    height: 150px; /* Fixed height for rectangular frame */
+    object-fit: cover; /* Ensures the image fills the frame without distortion */
+    border-radius: 8px; /* Match the box's rounded corners */
+}
+
+.gallery-caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333; /* Dark text for contrast */
+    font-family: 'Times New Roman', serif; /* Matching overall font */
 }
 
 /* Footer */
@@ -190,17 +207,22 @@ footer a:hover {
 }
 
 /* Desktop and Laptop View */
-@media (min-width: 769px) {
-    .gallery img {
-        width: 50px;
-        height: 35px;
+@media (min-width: 1025px) {
+    .gallery {
+        grid-template-columns: repeat(5, 1fr); /* 5 boxes per row for larger screens */
+    }
+}
+
+/* Tablet View */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(4, 1fr); /* 4 boxes per row for medium screens */
     }
 }
 
 /* Mobile View */
 @media (max-width: 768px) {
-    .gallery img {
-        width: 20%; /* Full width for smaller screens */
-        height: auto; /* Maintain aspect ratio */
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 boxes per row for smaller screens */
     }
 }
