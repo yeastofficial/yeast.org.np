@@ -1,25 +1,13 @@
 // gallery.js
 
-// Lightbox functionality for opening and closing images
+// Wait for the DOM content to load
 document.addEventListener('DOMContentLoaded', function () {
+    // Select all gallery images and add the Lightbox2 data attributes
     const galleryItems = document.querySelectorAll('.gallery-item img');
-    const lightboxOverlay = document.createElement('div');
-    lightboxOverlay.classList.add('lightbox-overlay');
-    document.body.appendChild(lightboxOverlay);
-
+    
     galleryItems.forEach(item => {
-        item.addEventListener('click', function () {
-            const imgSrc = item.src;
-            const lightboxImage = document.createElement('img');
-            lightboxImage.src = imgSrc;
-            lightboxOverlay.innerHTML = ''; // Clear any previous content
-            lightboxOverlay.appendChild(lightboxImage);
-            lightboxOverlay.style.display = 'block';
-        });
-    });
-
-    // Close the lightbox when the overlay is clicked
-    lightboxOverlay.addEventListener('click', function () {
-        lightboxOverlay.style.display = 'none';
+        // Set the Lightbox2 attributes to enable the gallery functionality
+        item.setAttribute('data-lightbox', 'gallery');  // 'gallery' can be a unique identifier for a group of images
+        item.setAttribute('data-title', item.alt);  // Optional: Add image title from the alt attribute
     });
 });
