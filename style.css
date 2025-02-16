@@ -113,6 +113,41 @@ body {
     color: #15024f; /* Secondary color */
 }
 
+/* Photo Gallery Section */
+#photo-gallery {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light background */
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
 /* Card Section (for Projects, Initiatives) */
 .cards {
     display: flex;
@@ -154,74 +189,74 @@ body {
 .team-gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Aligns all photo frames in the center */
-    gap: 10px; /* Space between photo frames */
+    justify-content: center;
+    gap: 10px;
     padding: 20px;
 }
 
 .team-gallery-item {
-    width: 12%; /* Each photo frame takes approximately 12% of the row for 7 frames */
+    width: 12%;
     text-align: center;
 }
 
 .team-gallery img {
-    width: 100%; /* Fully fills the photo frame */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensures image fits without distortion */
-    border-radius: 8px; /* Rounded corners for photo frame */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for aesthetics */
-    transition: transform 0.3s ease; /* Hover effect */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
 .team-gallery img:hover {
-    transform: scale(1.05); /* Slight zoom-in effect on hover */
+    transform: scale(1.05);
 }
 
 .team-gallery-caption {
-    margin-top: 5px; /* Space between image and caption */
-    font-size: 12px; /* Small text for caption */
-    color: #34495e; /* Neutral text color */
+    margin-top: 5px;
+    font-size: 12px;
+    color: #34495e;
 }
 
 /* Responsive Design for Team Gallery */
 @media (min-width: 1024px) {
     .team-gallery-item {
-        width: 12%; /* 7 photo frames per row on large screens */
+        width: 12%;
     }
 }
 
 @media (max-width: 1024px) {
     .team-gallery-item {
-        width: 14%; /* 6-7 photo frames per row on medium screens */
+        width: 14%;
     }
 }
 
 @media (max-width: 768px) {
     .team-gallery-item {
-        width: 20%; /* 5 photo frames per row on tablets */
+        width: 20%;
     }
 }
 
 @media (max-width: 480px) {
     .team-gallery-item {
-        width: 30%; /* 3 photo frames per row on small mobile devices */
+        width: 30%;
     }
 
     .team-gallery-caption {
-        font-size: 10px; /* Smaller caption for mobile screens */
+        font-size: 10px;
     }
 }
 
 /* Footer */
 footer {
-    background-color: #34495e; /* Dark gray-blue */
+    background-color: #34495e;
     color: #fff;
     text-align: center;
     padding: 20px;
 }
 
 footer a {
-    color: #3498db; /* Primary color */
+    color: #3498db;
     text-decoration: none;
 }
 
@@ -229,23 +264,21 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Desktop and Laptop View */
+/* Responsive Design for Gallery */
 @media (min-width: 1025px) {
     .gallery {
-        grid-template-columns: repeat(5, 1fr); /* 5 boxes per row for larger screens */
+        grid-template-columns: repeat(5, 1fr);
     }
 }
 
-/* Tablet View */
 @media (min-width: 769px) and (max-width: 1024px) {
     .gallery {
-        grid-template-columns: repeat(4, 1fr); /* 4 boxes per row for medium screens */
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
-/* Mobile View */
 @media (max-width: 768px) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr); /* 2 boxes per row for smaller screens */
+        grid-template-columns: repeat(2, 1fr);
     }
 }
