@@ -1,454 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Youth for Environment And Social Transformation (YEAST) - Empowering youth for environmental and social transformation in Nepal.">
-    <meta name="keywords" content="YEAST, Nepal, Environment, Youth Empowerment, Education, Agriculture, Sustainable Farming, Social Development">
     <title>YEAST - Youth for Environment And Social Transformation</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Times New Roman', serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-        }
-
-        /* General styling */
-        .navbar {
-            display: flex;
-            justify-content: space-around;
-            background-color: #00FFFF;
-            padding: 10px;
-        }
-
-        .navbar a {
-            text-decoration: none;
-            color: #333;
-            padding: 10px;
-            font-weight: bold;
-        }
-
-        .navbar a:hover {
-            background-color: #ccc;
-        }
-
-        .hero {
-            background-color: #00FFFF;
-            color: white;
-            padding: 50px;
-            text-align: center;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-        }
-
-        .hero p {
-            font-size: 1.5rem;
-        }
-
-        .latest-news, .about, .projects, .team, .gallery {
-            margin: 50px;
-        }
-
-        /* Card Styles */
-        .card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .card img {
-            width: 100%;
-            height: auto;
-        }
-
-        .card-body {
-            padding: 15px;
-        }
-
-        /* Responsive Grid */
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-            gap: 15px;
-        }
-
-        /* Team section */
-        .cards .card {
-            text-align: center;
-            padding: 15px;
-        }
-
-        .team-gallery .photo-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-            gap: 10px;
-            justify-content: center;
-        }
-
-        /* Gallery and team member images */
-        .card img {
-            border-radius: 50%;
-            object-fit: cover;
-            width: 150px;
-            height: 150px;
-        }
-
-        .card-content h3 {
-            font-size: 1.2rem;
-        }
-
-        .card-content p {
-            font-size: 1rem;
-            margin: 5px 0;
-        }
-
-        /* Mobile View */
-        @media screen and (max-width: 768px) {
-            .navbar {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .hero p {
-                font-size: 1.2rem;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
-            .team-gallery .photo-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Larger screen (desktop) adjustments */
-        @media screen and (min-width: 1200px) {
-            .hero {
-                padding: 80px;
-            }
-
-            .cards {
-                grid-template-columns: repeat(3, 1fr);
-            }
-        }
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+    <header class="navbar">
+        <div class="container">
+            <a href="#" class="logo">YEAST</a>
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="nav-toggle">☰</button>
+        </div>
+    </header>
 
-    <div class="title">
-        <img src="Untitled-2.png" alt="YEAST Logo" style="width: 100px;">
-        Youth for Environment And Social Transformation (YEAST)
-    </div>
-
-    <div class="navbar">
-        <a href="#title">Home</a>
-        <a href="#latest-news">Latest News</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#team">Our Team</a>
-        <a href="#gallery">Photo Gallery</a>
-        <a href="#contact">Contact</a>
-    </div>
-
-    <div class="hero">
-        <h1>Welcome to YEAST</h1>
-        <p>Bridging the gap between rural, environmental, and social education in Nepal.</p>
-    </div>
-
-    <section id="latest-news">
-        <div class="latest-news">
-            <h2>Latest News</h2>
-            <div class="card">
-                <img src="Article.jpg" alt="news image">
-                <div class="card-body">
-                    <h3>Call for article</h3>
-                    <p>We are inviting contributions for the upcoming book "Krishi Sarathi," focusing on contemporary agricultural practices and sustainable farming solutions.</p>
-                </div>
-            </div>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Transforming Communities Through Youth Empowerment</h1>
+            <p>Join YEAST in driving environmental and social transformation across Nepal.</p>
+            <a href="#get-involved" class="btn-primary">Get Involved</a>
         </div>
     </section>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Youth for Environment And Social Transformation (YEAST) is a non-profit organization established on April 17, 2022, by dynamic students from various applied sciences institutions, with guidance from senior educators. YEAST is committed to enhancing character and leadership development in youth through training programs, discussions, debates, courses, and meetings, benefiting local farmers by disseminating knowledge and skills. The organization's primary goal is to bridge the gap between rural, environmental, and social education, enabling individuals to understand issues more practically and effectively at the grassroots level. Since its inception, YEAST has been actively involved in multiple sectors, including environmental conservation, social issues, education, veterinary, and agriculture. Through its work, YEAST strives to empower youth and local communities to become change-makers who lead sustainable and socially responsible lives.</p>
-    </section>
 
-    <section id="projects">
-        <h2>Our Projects</h2>
-        <div class="cards">
-            <div class="card">
-                <img src="Yeast LOgo (1).png" alt="Project 1">
-                <div class="card-content">
-                    <h3>Animal Birth Control</h3>
-                    <p>YEAST has implemented ABC programs across several districts in Nepal, sterilizing stray dogs and promoting animal welfare.</p>
-            <div class="card">
-Program Overview:
-
-Objective: To manage the stray dog population through sterilization, thereby reducing the number of homeless animals and preventing the spread of diseases.
-
-Methodology: The program involves capturing stray dogs, performing sterilization surgeries, and then releasing them back into their original locations.
-
-Seasonal Breakdown:
-
-While specific data for each season (from Season 1 to Season 14) is not readily available, the program has been ongoing for several years, with multiple seasons conducted annually. Each season typically spans several months, during which a significant number of dogs are sterilized in the targeted districts.
-
-Districts Covered:
-
-Rupandehi: Located in the Lumbini Province, Rupandehi has been a focal point for YEAST's ABC programs due to its urban and rural mix, which presents unique challenges for stray dog management.
-
-Arghakhanchi: This district, known for its hilly terrain, has benefited from YEAST's initiatives aimed at controlling the stray dog population in both urban and remote areas.
-
-Palpa: Palpa's diverse geography, including urban centers and rural communities, has been addressed through targeted ABC programs to ensure comprehensive coverage.
-
-Dhading: Dhading's proximity to the Kathmandu Valley has made it a strategic location for YEAST's programs, aiming to control the stray dog population in both urban and peri-urban areas.
-
-Makwanpur: Makwanpur's varied landscapes and communities have been engaged in YEAST's ABC programs, focusing on both urban centers and rural areas to manage the stray dog population effectively.
-
-Total Number of Dogs Sterilized:
-
-The exact number of dogs sterilized across all seasons and districts is almost 2500 till Jan, 2015. YEAST has significant progress in reducing the stray dog population through its ongoing efforts.</p>
-                </div>
-            </div>
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>YEAST is a platform for youth to become change-makers in environmental conservation and social development. Our mission is to bridge gaps in education, environmental awareness, and sustainable practices in Nepal.</p>
         </div>
     </section>
-<section id="team">
-  <h2>Meet Our Team</h2>
-
-  <div class="meet-our-team">
-    <h3>Our Team Members</h3>
-    <h2>Advisor</h2>
-    <div class="cards">
-        <div class="card advisor-card">
-            <img src="huma_neupane.JPG" alt="Huma Neupane">
-            <div class="card-content">
-                <h3>Huma Neupane, PhD</h3>
-                <p>Director, DORP, IAAS, TU</p>
-                <p>Email: huma@iaas.edu</p>
-            </div>
+<section id="projects">
+      <h2>Our Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <img src="project1.jpg" alt="Cleanliness Campaign">
+          <h3>Cleanliness Campaign</h3>
+          <p>Organizing community-driven cleanup drives to promote hygiene and environmental conservation.</p>
         </div>
-        <div class="card advisor-card">
-            <img src="kamal_regmi.jpg" alt="Kamal Regmi">
-            <div class="card-content">
-                <h3>Asst. Prof. Kamal Regmi</h3>
-                <p>IAAS, TU</p>
-                <p>Email: kamal@iaas.edu</p>
-            </div>
+        <div class="project-card">
+          <img src="project2.jpg" alt="Sustainable Agriculture">
+          <h3>Sustainable Agriculture</h3>
+          <p>Implementing sustainable farming practices to support local farmers and protect the environment.</p>
         </div>
-        <div class="card advisor-card">
-            <img src="akrit_rijal.jpg" alt="Akrit Rijal">
-            <div class="card-content">
-                <h3>Dr. Akrit Rijal</h3>
-                <p>Founding President</p>
-                <p>Email: aakrit@yeast.org.np</p>
-            </div>
+        <div class="project-card">
+          <img src="project3.jpg" alt="Youth Leadership Training">
+          <h3>Youth Leadership Training</h3>
+          <p>Empowering young leaders with the skills to create meaningful change in their communities.</p>
         </div>
-        <div class="card advisor-card">
-            <img src="anish_gyawali.jpg" alt="Anish Gyawali">
-            <div class="card-content">
-                <h3>Anish Gyawali</h3>
-                <p>Founder Secretary</p> 
-                <p>Former President</p>
-                <p>Email: anish.gyawali@yeast.org.np</p>
-            </div>
-        </div>
-        <div class="card advisor-card">
-            <img src="utsab_sapkota.jpg" alt="Utsab Sapkota">
-            <div class="card-content">
-                <h3>Utsab Sapkota</h3>
-                <p>Former President</p>
-                <p>Email: utsab.sapkota@yeast.org.np</p>
-            </div>
-        </div>
+      </div>
+    </section>
+    <section id="our-team" class="py-10 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <!-- Advisors Section -->
+    <h2 class="text-3xl font-bold text-center mb-8">Advisors</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Advisor Card -->
+      <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="advisor1.jpg"
+          alt="Huma Neupane"
+          class="mx-auto rounded-full w-32 h-32 object-cover mb-4 border-4 border-blue-500"
+        />
+        <h3 class="text-xl font-bold">Huma Neupane, PhD</h3>
+        <p class="text-sm text-gray-600">Director, DORP, IAAS, TU</p>
+        <p class="text-sm text-blue-500">huma.neupane@email.com</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="advisor2.jpg"
+          alt="Kamal Regmi"
+          class="mx-auto rounded-full w-32 h-32 object-cover mb-4 border-4 border-blue-500"
+        />
+        <h3 class="text-xl font-bold">Asst. Prof. Kamal Regmi</h3>
+        <p class="text-sm text-gray-600">IAAS, TU</p>
+        <p class="text-sm text-blue-500">kamal.regmi@email.com</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="advisor3.jpg"
+          alt="Dr. Akrit Rizal"
+          class="mx-auto rounded-full w-32 h-32 object-cover mb-4 border-4 border-blue-500"
+        />
+        <h3 class="text-xl font-bold">Dr. Akrit Rizal</h3>
+        <p class="text-sm text-gray-600">Founding President</p>
+        <p class="text-sm text-blue-500">akrit.rizal@email.com</p>
+      </div>
+      <!-- Add more advisors as needed -->
     </div>
 
-    <h2>Executive Board 2024/25</h2>
-    <div class="cards">
-        <div class="card executive-card">
-            <img src="Untitled-2.png" alt="Pradeep Bhusal">
-            <div class="card-content">
-                <h3>Pradeep Bhusal</h3>
-                <p>President</p>
-                <p>Email: pradeep@yeast.org.np</p>
-            </div>
-        </div>
-        <div class="card executive-card">
-            <img src="Untitled-2.png" alt="Saraswoti Gautam">
-            <div class="card-content">
-                <h3>Saraswoti Gautam</h3>
-                <p>Applied Coordinator</p>
-                <p>Email: saraswoti@yeast.org.np</p>
-            </div>
-        </div>
-        <div class="card executive-card">
-            <img src="Untitled-2.png" alt="Ritu Bhattarai">
-            <div class="card-content">
-                <h3>Ritu Bhattarai</h3>
-                <p>Social Media Coordinator</p>
-                <p>Email: ritu@yeast.org.np</p>
-            </div>
-        </div>
-        <div class="card executive-card">
-            <img src="Untitled-2.png" alt="Manisha Dhakal">
-            <div class="card-content">
-                <h3>Manisha Dhakal</h3>
-                <p>Social Coordinator</p>
-                <p>Email: manisha@yeast.org.np</p>
-            </div>
-        </div>
-        <div class="card executive-card">
-            <img src="Untitled-2.png" alt="Resma KC">
-            <div class="card-content">
-                <h3>Resma KC</h3>
-                <p>Vice-President</p>
-                <p>Email: resma@yeast.org.np</p>
-            </div>
-        </div>
-        <div class="card executive-card">
-            <img src="Untitled-2.png" alt="Arbin Dawadi">
-            <div class="card-content">
-                <h3>Arbin Dawadi</h3>
-                <p>Secretary</p>
-                <p>Email: arbin@yeast.org.np</p>
-            </div>
-        </div>
-        <div class="card executive-card">
-            <img src="indu_panthi.JPG" alt="Indu Panthi">
-            <div class="card-content">
-                <h3>Indu Panthi</h3>
-                <p>Treasurer</p>
-                <p>Email: indu@yeast.org.np</p>
-            </div>
-        </div>
-        <div class="card executive-card">
-            <img src="Untitled-2.png" alt="Kritima Sapkota">
-            <div class="card-content">
-                <h3>Kritima Sapkota</h3>
-                <p>Member</p>
-                <p>Email: kritima@yeast.org.np</p>
-            </div>
-        </div>
-        <div class="card executive-card">
-            <img src="Untitled-2.png" alt="Samikshya Khanal">
-            <div class="card-content">
-                <h3>Samikshya Khanal </h3>
-                <p>Member</p>
-                <p>Email: samikshya@yeast.org.np</p>
-            </div>
-        </div>
-        <div class="card executive-card">
-            <img src="Untitled-2.png" alt="Amrit Bhusal">
-            <div class="card-content">
-                <h3>Amrit Bhusal </h3>
-                <p>Member</p>
-                <p>Email: amrit@yeast.org.np</p>
-            </div>
-        </div>
-        <div class="card executive-card">
-            <img src="Untitled-2.png" alt="Prabin Thapa">
-            <div class="card-content">
-                <h3>Prabin Thapa</h3>
-                <p>Member</p>
-                <p>Email: prabin@yeast.org.np</p>
-            </div>
-        </div>
-        <div class="card executive-card">
-            <img src="Untitled-2.png" alt="Bishal Kunwar">
-            <div class="card-content">
-                <h3>Bishal Kunwar </h3>
-                <p>Member</p>
-                <p>Email: bishal@yeast.org.np</p>
-            </div>
-        </div>
-        <div class="card executive-card">
-            <img src="Untitled-2.png" alt="Kalyan Aryal">
-            <div class="card-content">
-                <h3>Kalyan Aryal </h3>
-                <p>Member</p>
-                <p>Email: kalyan@yeast.org.np</p>
-            </div>
-        </div>
-        <div class="card executive-card">
-            <img src="Untitled-2.png" alt="Sanjay Yadav">
-            <div class="card-content">
-                <h3>Sanjay Yadav </h3>
-                <p>Member</p>
-                <p>Email: sanjay@yeast.org.np</p>
-            </div>
-        </div>
-        <div class="card executive-card">
-            <img src="Untitled-2.png" alt="Sandeep Mourya">
-            <div class="card-content">
-                <h3>Sandeep Mourya </h3>
-                <p>Member</p>
-                <p>Email: sandeep@yeast.org.np</p>
-            </div>
-        </div>
+    <!-- Executive Board Section -->
+    <h2 class="text-3xl font-bold text-center mt-16 mb-8">Executive Board & Members</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-7 gap-6">
+      <!-- Team Member Card -->
+      <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="team1.jpg"
+          alt="Pradeep Bhusal"
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold">Pradeep Bhusal</h3>
+        <p class="text-sm text-gray-600">President</p>
+        <p class="text-sm text-blue-500">pradeep.bhusal@email.com</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="team2.jpg"
+          alt="Saraswoti Gautam"
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold">Saraswoti Gautam</h3>
+        <p class="text-sm text-gray-600">Applied Co-ordinator</p>
+        <p class="text-sm text-blue-500">saraswoti.gautam@email.com</p>
+      </div>
+      <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="team3.jpg"
+          alt="Ritu Bhattarai"
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold">Ritu Bhattarai</h3>
+        <p class="text-sm text-gray-600">Social Media Coordinator</p>
+        <p class="text-sm text-blue-500">ritu.bhattarai@email.com</p>
+      </div>
+<div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="manisha_dhakal.jpg"
+          alt="Manisha Dhakal"
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold">Manisha Dhakal</h3>
+        <p class="text-sm text-gray-600">Social Coordinator</p>
+        <p class="text-sm text-blue-500">manisha.dhakal@email.com</p>
+      </div>
+        <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="reshma_kc.jpg"
+          alt="Reshma KC"
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold">Reshma KC</h3>
+        <p class="text-sm text-gray-600">Vice-President</p>
+        <p class="text-sm text-blue-500">resma.kc@email.com</p>
+      </div>
+        <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="arbin_dawadi.jpg"
+          alt="Arbin Dawadi"
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold">Arbin Dawadi</h3>
+        <p class="text-sm text-gray-600">Secretary</p>
+        <p class="text-sm text-blue-500">arbin.dawadi@email.com</p>
+      </div>
+ <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="sadikshya_bhattarai.jpg"
+          alt="Sadikshya Bhattarai"
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold">Sadikshya Bhattarai</h3>
+        <p class="text-sm text-gray-600">Vice-Secretary</p>
+        <p class="text-sm text-blue-500">sadikshya.bhattarai@email.com</p>
+      </div>
+         </div>
+ <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="indu_panthi.jpg"
+          alt="Indu Panthi"
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold">Indu Panthi</h3>
+        <p class="text-sm text-gray-600">Treasurer</p>
+        <p class="text-sm text-blue-500">indu.panthi@email.com</p>
+      </div>
+      </div>
+ <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="kritima_sapkota.jpg"
+          alt="Kritima Sapkota "
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold">Kritima Sapkota </h3>
+        <p class="text-sm text-gray-600">Member</p>
+        <p class="text-sm text-blue-500">kritima.sapkota@email.com</p>
+      </div>
+         <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="kritima_sapkota.jpg"
+          alt="Samikshya Khanal "
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold">Samikshya Khanal </h3>
+        <p class="text-sm text-gray-600">Member</p>
+        <p class="text-sm text-blue-500">samikshya.khanal@email.com</p>
+      </div>
+         <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="amrit_bhusal.jpg"
+          alt="Amrit Bhusal"
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold">Amrit Bhusal</h3>
+        <p class="text-sm text-gray-600">Member</p>
+        <p class="text-sm text-blue-500">amrit.bhusal@email.com</p>
+      </div>
+         <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="prabin_thapa.jpg"
+          alt="Prabin Thapa"
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold"Prabin Thapa</h3>
+        <p class="text-sm text-gray-600">Member</p>
+        <p class="text-sm text-blue-500">prabin.thapa@email.com</p>
+      </div>
+         <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="bishal_kunwar.jpg"
+          alt="Bishal Kunwar"
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold">Bishal Kunwar</h3>
+        <p class="text-sm text-gray-600">Member</p>
+        <p class="text-sm text-blue-500">bishal.kunwar@email.com</p>
+      </div>
+         <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="Kalyan_Aryan.jpg"
+          alt="Kalyan Aryan"
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold">Kalyan Aryan</h3>
+        <p class="text-sm text-gray-600">Member</p>
+        <p class="text-sm text-blue-500">Kalyan_Aryan@email.com</p>
+      </div>
+         <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="Sanjay Yadav.jpg"
+          alt="Sanjay Yadav"
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold">Sanjay Yadav</h3>
+        <p class="text-sm text-gray-600">Member</p>
+        <p class="text-sm text-blue-500">Sanjay.Yadav@email.com</p>
+      </div>
+         <div class="bg-white shadow-lg rounded-lg p-4 text-center">
+        <img
+          src="Sandeep_Mourya.jpg"
+          alt="Sandeep Mourya"
+          class="mx-auto rounded-lg w-28 h-28 object-cover mb-4 border-2 border-green-500"
+        />
+        <h3 class="text-lg font-bold">Sandeep Mourya</h3>
+        <p class="text-sm text-gray-600">Member</p>
+        <p class="text-sm text-blue-500">Sandeep.Mourya@email.com</p>
+      </div>
     </div>
   </div>
 </section>
+<section id="blog" class="bg-white py-12">
+  <div class="container mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-bold text-gray-800">Our Blog</h2>
+      <p class="text-gray-600">Explore our latest articles, updates, and insights.</p>
+    </div>
 
-<section id="gallery">
-    <h2>Photo Gallery</h2>
-    <div class="photo-gallery">
-      <h3>Our Activities</h3>
-      <div class="photo-row">
-        <a href="ABC.jpg" data-lightbox="gallery"><img src="ABC.jpg" alt="Photo 1"></a>
-        <a href="AGM.jpg" data-lightbox="gallery"><img src="AGM.jpg" alt="Photo 2"></a>
-        <a href="Bootcamp.jpg" data-lightbox="gallery"><img src="Bootcamp.jpg" alt="Photo 3"></a>
-        <a href="cucumber.jpg" data-lightbox="gallery"><img src="cucumber.jpg" alt="Photo 4"></a>
-        <a href="mushroom.jpg" data-lightbox="gallery"><img src="mushroom.jpg" alt="Photo 4"></a>
+    <!-- Blog Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Blog Post 1 -->
+      <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x250" alt="Blog Post 1" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold text-gray-800">Blog Post Title 1</h3>
+          <p class="text-gray-600 text-sm mt-2">A brief description or excerpt from the blog post to entice readers to learn more.</p>
+          <a href="#" class="inline-block mt-4 text-blue-500 hover:underline font-semibold">Read More</a>
+        </div>
+      </div>
+
+      <!-- Blog Post 2 -->
+      <div class="bg-gray-100 rounded-lg shadow-lg overflow-hidden">
+        <img src="https://via.placeholder.com/400x
+</section>
+            
+    <section id="contact" class="bg-white py-12">
+  <div class="container mx-auto px-4">
+    <!-- Section Header -->
+    <div class="text-center mb-8">
+      <h2 class="text-3xl font-bold text-gray-800">Contact Us</h2>
+      <p class="text-gray-600">We would love to hear from you! Reach out to us anytime.</p>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="flex flex-col md:flex-row md:justify-between items-center">
+      <div class="mb-6 md:mb-0">
+        <p class="text-gray-800 font-semibold">Email:</p>
+        <p class="text-gray-600">yeast2018official@gmail.com</p>
+        <p class="text-gray-800 font-semibold mt-4">Phone:</p>
+        <p class="text-gray-600">+977-9867230656</p>
+      </div>
+
+      <!-- Social Media Links -->
+      <div class="flex space-x-6">
+        <a href="https://www.facebook.com/yeast2022" target="_blank" class="text-blue-600 text-2xl">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/yeast2022" target="_blank" class="text-pink-500 text-2xl">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
     </div>
-  </section>
 
-    <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: info@yeast.org.np  yeast2018official@gmail.com</p>
-    <p>Phone: +977-9867230656 </p>
+    <!-- Location Map -->
+    <div class="mt-8">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1288.13743939981!2d83.44637142353784!3d27.481312803322105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996998c34ee29e3%3A0xa8fe981339e44737!2sTribhuvan%20University%2C%20Institute%20of%20Agriculture%20and%20Animal%20Science%2C%20Paklihawa%20Campus!5e0!3m2!1sen!2snp!4v1739797620282!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
-    <!-- Contact Form -->
-    <form id="contact-form" action="submit_form.php" method="POST">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required placeholder="Enter your name">
-
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address" required placeholder="Enter your address">
-
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required placeholder="Enter your email">
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required placeholder="Write your message here"></textarea>
-
-        <button type="submit" class="btn">Send Message</button>
-    </form>
-
-    <!-- Google Map Embed -->
-    <div id="map" style="margin-top: 30px;">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d221.22641957681782!2d83.44673687231625!3d27.481030176562715!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996998c34ee29e3%3A0xa8fe981339e44737!2sTribhuvan%20University%2C%20Institute%20of%20Agriculture%20and%20Animal%20Science%2C%20Paklihawa%20Campus!5e0!3m2!1sen!2snp!4v1739461534077!5m2!1sen!2snp" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    <!-- Sign Up Button -->
+    <div class="mt-8 text-center">
+      <a href="#signup" class="bg-blue-500 text-white font-bold py-2 px-6 rounded-lg hover:bg-blue-600">Sign Up</a>
+    </div>
+  </div>
 </section>
-    <footer>
-         <a href="https://www.facebook.com/yeast2022">Facebook</a> | <a href="https://www.instagram.com/yeast2022">Instagram</a>
-        <p>&copy; 2025 Youth for Environment And Social Transformation. All rights reserved.</p>
-        <p> Website Designed by: ANish Gyawali</p>
-    </footer>
-  <!-- Lightbox2 JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
-</body>
-</html>
+<footer style="background-color:#333; color:white; text-align:center; padding:20px 0;">
+    <p>&copy; 2025 Youth for Environment And Social Transformation (YEAST). All Rights Reserved.</p>
+    <p>Designed by <strong>Anish Gyawali</strong></p>
+    <p>Follow us on: 
+        <a href="https://www.facebook.com/yeast2022" style="color:white; text-decoration:none;" target="_blank">Facebook</a> | 
+        <a href="https://twitter.com/yeast2022" style="color:white; text-decoration:none;" target="_blank">Twitter</a> | 
+        <a href="https://www.instagram.com/yeast2022" style="color:white; text-decoration:none;" target="_blank">Instagram</a>
+    </p>
+</footer>
