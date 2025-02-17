@@ -242,3 +242,42 @@ h3 {
     padding: 0.5rem 1rem;
   }
 }
+/* Photo Gallery Section */
+#photo-gallery {
+  margin: 50px 0;
+  text-align: center;
+}
+
+#photo-gallery h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Adjust the number of columns */
+  gap: 20px;
+  justify-items: center;
+}
+
+.gallery-item {
+  width: 100%;
+  max-width: 300px; /* Ensure all images have the same size */
+  border: 3px solid #ccc; /* Border for the frame */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px; /* Optional rounded corners for the image */
+}
+
+.caption {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #333;
+}
