@@ -1,9 +1,9 @@
-/* Reset */
+/* Reset and General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Header */
@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
+    background: #00AAAA;
     color: white;
     padding: 15px 20px;
 }
@@ -63,61 +63,41 @@ header {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background: #00bcd4;
+    background: #008080;
     color: white;
     text-decoration: none;
     border-radius: 5px;
 }
 
-.about, .services, .contact {
+/* About, Projects, Team, and Contact Sections */
+.about, .projects, .team, .contact {
     padding: 50px 20px;
     text-align: center;
 }
 
-.services .service-container {
+.project-container, .team-members {
     display: flex;
     justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
-.service-box {
-    background: #00bcd4;
+.project-box, .member {
+    background: #00AAAA;
     color: white;
     padding: 20px;
     border-radius: 5px;
+    width: 250px;
+    text-align: center;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    background: #333;
+    background: #008080;
     color: white;
     padding: 10px;
     margin-top: 20px;
 }
 
-/* Mobile Responsive */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background: #444;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        width: 100%;
-    }
-
-    .nav-links li {
-        margin: 10px;
-        text-align: center;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    .services .service-container {
-        flex-direction: column;
-    }
-}
+/* Mobile
