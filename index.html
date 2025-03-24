@@ -1,13 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/src//assets/yeast_logo.jpg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yeast</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Under Maintenance</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            background-color: #00FFFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: floatIn 1.5s ease-out forwards;
+            z-index: 1000;
+        }
+
+        h2 {
+            color: #333;
+            margin: 0;
+        }
+
+        p {
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .contact {
+            font-weight: bold;
+            color: #0077b6;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #0077b6;
+            font-weight: bold;
+        }
+
+        @keyframes floatIn {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 600px) {
+            .popup {
+                bottom: 15px;
+                right: 15px;
+                padding: 20px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating Popup -->
+    <div class="popup">
+        <h2>Website Under Maintenance</h2>
+        <p>Please contact the respective representative from the organization.</p>
+        <p class="contact">Refer to our <a href="https://www.facebook.com/yeast2022" target="_blank">Facebook Page</a></p>
+    </div>
+
+    <script>
+        // Optional: Fade-in effect for the popup on page load
+        window.onload = function () {
+            const popup = document.querySelector('.popup');
+            popup.style.animation = "floatIn 1.5s ease-out forwards";
+        };
+    </script>
+
+</body>
 </html>
