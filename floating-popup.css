@@ -1,0 +1,30 @@
+/* CSS for floating popup animation */
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    background-image: url('gallery.jpg');  /* Add background image */
+    background-size: cover;  /* Ensure the image covers the entire page */
+    background-position: center;  /* Center the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.8);  /* Add some opacity for readability */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: floatIn 1.5s ease-out forwards;
+    z-index: 1000;
+}
+
+h2 {
+    colo
